@@ -1,6 +1,6 @@
 class Solution {
 public:
-int space0pti(vector<int> &nums, int n){
+int solve(vector<int> &nums, int n){
    
     int prev1 = nums[0];
     int prev2 = 0;
@@ -26,7 +26,7 @@ int space0pti(vector<int> &nums, int n){
         
         
         
-        int ans = space0pti(nums, n);
+        int ans = solve(nums, n);
         return ans;
     }
 };
