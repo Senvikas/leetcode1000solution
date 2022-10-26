@@ -31,8 +31,8 @@ public:
         {
             if(nums[i] == 0) return 1;
             
-            else if(mp.find((nums[i]-k+k)%k)!=mp.end()){
-                if(i-mp[(nums[i]-k+k)%k]>1)
+            else if(mp.find((nums[i])%k)!=mp.end()){
+                if(i-mp[(nums[i])%k]>1)
                 return 1;
             }
             
