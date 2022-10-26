@@ -17,7 +17,7 @@ class Solution
             int div = 1;
 //this is the catch            //int s = *min_element(nums.begin(), nums.end());
             int s = 1;
-            int e = *max_element(nums.begin(), nums.end());
+            int e = *max_element(nums.begin(), nums.end())+1;
 
             while (s <= e)
             {
