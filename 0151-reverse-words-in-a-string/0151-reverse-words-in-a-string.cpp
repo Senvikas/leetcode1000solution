@@ -1,3 +1,11 @@
+/*
+Qualcomm
+Amazon
+Microsoft
+Cisco
+Facebook
+Twitter
+*/
 class Solution
 {
     public:
@@ -6,18 +14,26 @@ class Solution
             if (s.size() == 0) return s;
             stack<string> stack;
             string result;
+            string word = "";
             for (int i = 0; i < s.size(); i++)
             {
-                string word;
-                if (s[i] == ' ') continue;	//skip spaces
-                while (i < s.size() && s[i] != ' ')
+                if (s[i] == ' ' && word.size() != 0)
                 {
-                	//store continuous letters into word
-                    word += s[i];
-                    i++;
+                    stack.push(word);
+                    word.clear();
                 }
-                stack.push(word);	//push word to the stack
+                else if (s[i] == ' ' && word.size() == 0)	//skip spaces
+                {
+                    continue;
+                }
+                else
+                {
+                    word += s[i];
+                }
             }
+            cout << word.size() << endl;
+            if (word.size() != 0)
+                stack.push(word);
             while (!stack.empty())
             {
                 result += stack.top();
