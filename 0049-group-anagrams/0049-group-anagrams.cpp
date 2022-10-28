@@ -6,19 +6,6 @@ class Solution
         {
 
             int n = s.size();
-            vector<pair<int,string> >vn;
-            for (int i = 0; i < n; i++)
-            {
-                vn.push_back({ s[i].length(), s[i] });
-            }
-
-            sort(vn.begin(), vn.end());
-            
-            for(int i = 0; i<n; i++)
-            cout<<vn[i].second<<" ";
-            cout<<endl;
-            
-            
             map< vector<char>, vector<string> >mp;
             vector<vector < string>> ans;
             
