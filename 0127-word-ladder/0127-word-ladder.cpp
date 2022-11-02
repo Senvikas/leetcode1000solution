@@ -16,6 +16,7 @@ class Solution
             queue<string> q;
             q.push(b);
             vis.insert(b);
+            vis.erase(b);
 
            	//bfs
             while (!q.empty())
@@ -35,10 +36,11 @@ class Solution
 
                                     if (newword == e)
                                         return cnt + 1;
-                                    if (vis.find(newword) == vis.end() && valid.find(newword) != valid.end())
+                                    if ( valid.find(newword) != valid.end())
                                     {
-                                        vis.insert(newword);
+                                       //vis.insert(newword);
                                         q.push(newword);
+                                        valid.erase(newword);
                                     }
                                 }
                         }
