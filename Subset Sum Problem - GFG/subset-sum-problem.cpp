@@ -25,8 +25,27 @@ bool f(vector<int>arr, int s, int ind, vector<vector<int>>&dp)
 }
 
     bool isSubsetSum(vector<int>arr, int sum){
-        vector<vector<int>>dp(101, vector<int>(100001, -1));
-        return f(arr, sum, arr.size()-1, dp);
+     /*   vector<vector<int>>dp(101, vector<int>(100001, -1));
+        return f(arr, sum, arr.size()-1, dp);       */
+        int n=arr.size();
+        vector<vector<bool>>dp(100, vector<bool>(100000, false));
+        for(int i=0; i<n; i++) dp[i][0] = true;
+        dp[0][arr[0]] = true;
+        
+        for(int i=1; i<n; i++)
+        {
+            for(int tar=1; tar<=sum; tar++)
+            {
+                bool exc = dp[i-1][tar];
+    
+                bool inc = false;
+                if(arr[i] <= tar) 
+                inc = dp[i-1][tar-arr[i]];
+                
+                dp[i][tar] = inc | exc;
+            }
+        }
+        return dp[n-1][sum];
     }
 };
 
