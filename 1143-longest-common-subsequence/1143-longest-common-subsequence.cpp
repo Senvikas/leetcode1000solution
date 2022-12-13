@@ -15,12 +15,12 @@ class Solution
     {
         int n = s.length(), m = t.length();
 
-       	//memoization          
+       	//memoization    (must learn about shifting of the index in this question)      
 /*        vector<vector < int>> dp(n + 1, vector<int> (m + 1, -1));
         return f(s, t, n, m, dp); */
 
        	//space opti
-        vector<vector < int>> dp(n + 1, vector<int> (m + 1, 0));
+   /*     vector<vector < int>> dp(n + 1, vector<int> (m + 1, 0));
         for (int i = 1; i <= n; i++)
         {
             for (int j = 1; j <= m; j++)
@@ -30,6 +30,24 @@ class Solution
             }
         }
 
-        return dp[n][m];
+        return dp[n][m];          */
+        if(n < m)
+        {
+            swap(s, t);
+            swap(n, m);
+        }
+        vector<int> prev(n + 1, 0), curr(m+1, 0);
+        
+        for (int i = 1; i <= n; i++)
+        {
+            for (int j = 1; j <= m; j++)
+            {
+                if (s[i - 1] == t[j - 1]) curr[j] = 1 + prev[j - 1];
+                else curr[j] = max(prev[j], curr[j - 1]);
+            }
+            prev = curr;
+        }
+
+        return prev[m];
     }
 };
