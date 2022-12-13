@@ -14,11 +14,11 @@ class Solution
     int numDistinct(string s, string t)
     {
         int n = s.length(), m = t.length();
-        /*    vector<vector < int>> dp(n+1, vector<int> (m+1, -1));
+        /*   vector<vector < int>> dp(n+1, vector<int> (m+1, -1));
                return solve(s, t, n, m, dp);       */
 
        	//tabulation - >> use one base index
-        /*       vector<vector < double>> dp(n + 1, vector<double> (m + 1, 0));
+        /*      vector<vector < double>> dp(n + 1, vector<double> (m + 1, 0));
                 for (int i = 0; i <= n; i++)
                     dp[i][0] = 1;
 
@@ -31,18 +31,30 @@ class Solution
                     }
                 }
                 return (int)dp[n][m];                   */
-        vector<double> prev(m + 1, 0), curr(m + 1, 0);
-        prev[0] = curr[0] = 1;
+        /*     vector<double> prev(m + 1, 0), curr(m + 1, 0);
+                prev[0] = curr[0] = 1;
+
+                for (int i = 1; i <= n; i++)
+                {
+                    for (int j = 1; j <= m; j++)
+                    {
+                        if (s[i - 1] == t[j - 1]) curr[j] = prev[j - 1] + prev[j];
+                        else curr[j] = prev[j];
+                    }
+                    prev = curr;
+                }
+                return (int) curr[m];               */
+
+        vector<double> prev(m + 1, 0);
+        prev[0] = 1;
 
         for (int i = 1; i <= n; i++)
         {
-            for (int j = 1; j <= m; j++)
+            for (int j = m; j >= 1; j--)
             {
-                if (s[i - 1] == t[j - 1]) curr[j] = prev[j - 1] + prev[j];
-                else curr[j] = prev[j];
+                if (s[i - 1] == t[j - 1]) prev[j] = prev[j - 1] + prev[j];
             }
-            prev = curr;
         }
-        return (int) curr[m];
+        return (int) prev[m];
     }
 };
