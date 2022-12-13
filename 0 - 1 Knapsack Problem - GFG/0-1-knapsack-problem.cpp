@@ -36,7 +36,7 @@ class Solution
     return solveMem(wt, val, n-1, W, dp);           */
     
     
-    /*
+    
      vector< vector<int> > dp(n, vector<int>(W+1, 0));
      
     //basecase
@@ -57,9 +57,9 @@ class Solution
         }
     }
         
-        return dp[n-1][W];                         */
+        return dp[n-1][W];                         
         
-        vector<int>prev(W+1, 0), curr(W+1, 0);
+/*        vector<int>prev(W+1, 0), curr(W+1, 0);
         for(int i=wt[0]; i<=W; i++) prev[i] = val[0];
         
     for(int i=1; i<n; i++)
@@ -78,7 +78,7 @@ class Solution
             prev = curr;
         }
     
-    return prev[W];                 
+    return prev[W];                 */
     
     //single row optimization
     
