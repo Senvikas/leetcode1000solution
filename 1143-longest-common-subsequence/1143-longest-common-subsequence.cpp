@@ -16,28 +16,24 @@ class Solution
         int n = s.length(), m = t.length();
 
        	//memoization    (must learn about shifting of the index in this question)      
-/*        vector<vector < int>> dp(n + 1, vector<int> (m + 1, -1));
-        return f(s, t, n, m, dp); */
+        /*       vector<vector < int>> dp(n + 1, vector<int> (m + 1, -1));
+                return f(s, t, n, m, dp); */
 
        	//space opti
-   /*     vector<vector < int>> dp(n + 1, vector<int> (m + 1, 0));
-        for (int i = 1; i <= n; i++)
-        {
-            for (int j = 1; j <= m; j++)
-            {
-                if (s[i - 1] == t[j - 1]) dp[i][j] = 1 + dp[i - 1][j - 1];
-                else dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
-            }
-        }
+        /*    vector<vector < int>> dp(n + 1, vector<int> (m + 1, 0));
+             for (int i = 1; i <= n; i++)
+             {
+                 for (int j = 1; j <= m; j++)
+                 {
+                     if (s[i - 1] == t[j - 1]) dp[i][j] = 1 + dp[i - 1][j - 1];
+                     else dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
+                 }
+             }
 
-        return dp[n][m];          */
-        if(n < m)
-        {
-            swap(s, t);
-            swap(n, m);
-        }
-        vector<int> prev(n + 1, 0), curr(m+1, 0);
-        
+             return dp[n][m];          */
+        int k = max(n, m);
+        vector<int> prev(k + 1, 0), curr(k + 1, 0);
+
         for (int i = 1; i <= n; i++)
         {
             for (int j = 1; j <= m; j++)
