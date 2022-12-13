@@ -3,10 +3,10 @@ class Solution
     public:
         int f(string s, string t, int ind1, int ind2, vector<vector < int>> &dp)
         {
-            if (ind1 < 0 || ind2 < 0) return 0;
-            if (ind1 == 0 && ind2 == 0) return s[ind1] == t[ind2];
+            if (ind1 == 0 || ind2 == 0) return 0;
+
             if (dp[ind1][ind2] != -1) return dp[ind1][ind2];
-            if (s[ind1] == t[ind2]) return dp[ind1][ind2] = 1 + f(s, t, ind1 - 1, ind2 - 1, dp);
+            if (s[ind1 - 1] == t[ind2 - 1]) return dp[ind1][ind2] = 1 + f(s, t, ind1 - 1, ind2 - 1, dp);
             else return dp[ind1][ind2] = max(f(s, t, ind1 - 1, ind2, dp), f(s, t, ind1, ind2 - 1, dp));
            	//return dp[ind1][ind2];
         }
@@ -15,37 +15,21 @@ class Solution
     {
         int n = s.length(), m = t.length();
 
-        /*    vector<vector < int>> dp(n + 1, vector<int> (m + 1, -1));
-              return f(s, t, n - 1, m - 1, dp);           */
+       	//memoization          
+/*        vector<vector < int>> dp(n + 1, vector<int> (m + 1, -1));
+        return f(s, t, n, m, dp); */
 
-        vector<vector < int>> dp(n, vector<int> (m, 1));
-        for (int ind2 = 0; ind2 < m; ind2++)
+       	//space opti
+        vector<vector < int>> dp(n + 1, vector<int> (m + 1, 0));
+        for (int i = 1; i <= n; i++)
         {
-            int val = s[0] == t[ind2];
-            if (val) break;
-            dp[0][ind2] = 0;
-        }
-        for (int ind1 = 0; ind1 < n; ind1++)
-        {
-            int val = s[ind1] == t[0];
-            if (val) break;
-            dp[ind1][0] = 0;
-        }
-
-        for (int ind1 = 1; ind1 < n; ind1++)
-        {
-            for (int ind2 = 1; ind2 < m; ind2++)
+            for (int j = 1; j <= m; j++)
             {
-               	//matched
-                if (s[ind1] == t[ind2])
-                {
-                    dp[ind1][ind2] = 1 + dp[ind1 - 1][ind2 - 1];
-                }
-                else
-                    dp[ind1][ind2] = max(dp[ind1 - 1][ind2], dp[ind1][ind2 - 1]);
+                if (s[i - 1] == t[j - 1]) dp[i][j] = 1 + dp[i - 1][j - 1];
+                else dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
             }
         }
 
-        return dp[n - 1][m - 1];
+        return dp[n][m];
     }
 };
