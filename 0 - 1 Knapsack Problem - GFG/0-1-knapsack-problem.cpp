@@ -59,7 +59,7 @@ class Solution
         
         return dp[n-1][W];                         */
         
-/*        vector<int>prev(W+1, 0), curr(W+1, 0);
+        vector<int>prev(W+1, 0), curr(W+1, 0);
         for(int i=wt[0]; i<=W; i++) prev[i] = val[0];
         
     for(int i=1; i<n; i++)
@@ -78,28 +78,28 @@ class Solution
             prev = curr;
         }
     
-    return prev[W];                 */
+    return prev[W];                 
     
     //single row optimization
     
-     vector<int>prev(W+1, 0);
-      for(int i=wt[0]; i<=W; i++) prev[i] = val[0];
+    //  vector<int>prev(W+1, 0);
+    //   for(int i=wt[0]; i<=W; i++) prev[i] = val[0];
       
-         for(int i=1; i<n; i++)
-            {
-                for(int wei = W; wei>=0; wei--)
-                {
-                    int incl = 0;
-                    if(wt[i] <= wei)
-                        incl = val[i] + prev[wei - wt[i]];
-                    //excl
-                    int excl = 0 + prev[wei];
+    //      for(int i=1; i<n; i++)
+    //         {
+    //             for(int wei = W; wei>=0; wei--)
+    //             {
+    //                 int incl = 0;
+    //                 if(wt[i] <= wei)
+    //                     incl = val[i] + prev[wei - wt[i]];
+    //                 //excl
+    //                 int excl = 0 + prev[wei];
                     
-                    //update
-                    prev[wei] = max(incl, excl);
-                }
-            }
-        return prev[W];
+    //                 //update
+    //                 prev[wei] = max(incl, excl);
+    //             }
+    //         }
+    //     return prev[W];
     }
 };
 
