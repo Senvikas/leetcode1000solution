@@ -53,8 +53,8 @@ public:
         
         
         //2 rows
-        vector<int>prev(W+1, 0),  curr(W+1, 0);
-        for(int wei = 0; wei <= W; wei++)
+ /*       vector<int>prev(W+1, 0),  curr(W+1, 0);
+        for(int wei = W; wei >= 0; wei--)
         {
             prev[wei] = val[0]*(wei/wt[0]);
         }
@@ -71,6 +71,29 @@ public:
                 curr[wei] = max(exc, inc);
             }
             prev = curr;
+        }
+        
+        return prev[W];               */
+        
+        
+        //single row
+        vector<int>prev(W+1, 0);
+        for(int wei = 0; wei <= W; wei++)
+        {
+            prev[wei] = val[0]*(wei/wt[0]);
+        }
+        
+        for(int i=1; i<N; i++)
+        {
+            for(int wei = 0; wei <= W; wei++)
+            {
+                int exc = prev[wei];
+                int inc = 0;
+                if(wei >= wt[i]) inc = val[i] + prev[wei-wt[i]];
+                
+                //update the dp
+                prev[wei] = max(exc, inc);
+            }
         }
         
         return prev[W];
