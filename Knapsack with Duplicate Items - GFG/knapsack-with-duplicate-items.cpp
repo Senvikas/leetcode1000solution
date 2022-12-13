@@ -30,7 +30,7 @@ public:
   /*      vector<vector<int>>dp(N, vector<int>(W+1, -1));
         return f(N-1, W, val, wt, dp);          */
         
-        vector<vector<int>>dp(N, vector<int>(W+1, 0));
+ /*       vector<vector<int>>dp(N, vector<int>(W+1, 0));
         for(int wei = 0; wei <= W; wei++)
         {
             dp[0][wei] = val[0]*(wei/wt[0]);
@@ -49,7 +49,31 @@ public:
             }
         }
         
-        return dp[N-1][W];
+        return dp[N-1][W];            */
+        
+        
+        //2 rows
+        vector<int>prev(W+1, 0),  curr(W+1, 0);
+        for(int wei = 0; wei <= W; wei++)
+        {
+            prev[wei] = val[0]*(wei/wt[0]);
+        }
+        
+        for(int i=1; i<N; i++)
+        {
+            for(int wei=1; wei<=W; wei++)
+            {
+                int exc = prev[wei];
+                int inc = 0;
+                if(wei >= wt[i]) inc = val[i] + curr[wei-wt[i]];
+                
+                //update the dp
+                curr[wei] = max(exc, inc);
+            }
+            prev = curr;
+        }
+        
+        return prev[W];
     }
 };
 
