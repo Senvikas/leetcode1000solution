@@ -16,11 +16,11 @@ class Solution
         int n = s.length(), m = t.length();
 
        	//memoization    (must learn about shifting of the index in this question)      
-        /*       vector<vector < int>> dp(n + 1, vector<int> (m + 1, -1));
+        /*      vector<vector < int>> dp(n + 1, vector<int> (m + 1, -1));
                 return f(s, t, n, m, dp); */
 
        	//space opti
-        /*    vector<vector < int>> dp(n + 1, vector<int> (m + 1, 0));
+        /*   vector<vector < int>> dp(n + 1, vector<int> (m + 1, 0));
              for (int i = 1; i <= n; i++)
              {
                  for (int j = 1; j <= m; j++)
@@ -44,6 +44,7 @@ class Solution
             prev = curr;
         }
 
-        return prev[m];
+        int ans = prev[m];
+        return ans;
     }
 };
