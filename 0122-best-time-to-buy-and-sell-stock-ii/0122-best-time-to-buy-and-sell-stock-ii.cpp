@@ -39,8 +39,35 @@ class Solution
        return profit;           */
 
        	//Dynamic programming
-        /* return f(0, 1, n, prices);    */	//recursive
-        vector<vector < int>> dp(n + 1, vector<int> (2, -1));
-        return f(0, 1, n, prices, dp);
+        /*return f(0, 1, n, prices);    */	//recursive
+        /*    vector<vector < int>> dp(n, vector<int> (2, -1));
+               return f(0, 1, n, prices, dp);         */	//memoization
+
+       	//Tabulation
+        vector<vector < int>> dp(n + 1, vector<int> (2, 0));
+
+        for (int ind = n - 1; ind >= 0; ind--)
+        {
+            for (int c = 0; c < 2; c++)
+            {
+                int profit = 0;
+                if (c == 1)
+                {
+                    int chooseToBuy = -prices[ind] + dp[ind + 1][0];
+                    int NotBuying = 0 + dp[ind + 1][1];
+
+                    profit = max(chooseToBuy, NotBuying);
+                }
+                else
+                {
+                    int chooseToSell = prices[ind] + dp[ind + 1][1];
+                    int NotSelling = 0 + dp[ind + 1][0];
+
+                    profit = max(chooseToSell, NotSelling);
+                }
+                dp[ind][c] = profit;
+            }
+        }
+        return dp[0][1];
     }
 };
