@@ -13,14 +13,29 @@ class Solution
             return dp[ind][prev_ind + 1] = len;
         }
 
-    int lengthOfLIS(vector<int> &nums)
+    int lengthOfLIS(vector<int> &arr)
     {
        	//rules 1.express everything in terms of ind
        	//2. explore all possibilities
        	//3. return maximum
        	//4. basecase
-        int n = nums.size();
+        int n = arr.size();
+        /*
         vector<vector < int>> dp(n, vector<int> (n + 1, -1));
-        return f(0, -1, nums, n, dp);
+        return f(0, -1, arr, n, dp);
+        */
+        vector<vector < int>> dp(n + 1, vector<int> (n + 1, 0));
+        for (int ind = n - 1; ind >= 0; ind--)
+        {
+            for (int prev_ind = ind - 1; prev_ind >= -1; prev_ind--)
+            {
+                int len = dp[ind + 1][prev_ind + 1];
+                if (prev_ind == -1 || arr[ind] > arr[prev_ind])
+                    len = max(len, 1 + dp[ind + 1][ind + 1]);
+
+                dp[ind][prev_ind + 1] = len;
+            }
+        }
+        return dp[0][0];
     }
 };
