@@ -25,7 +25,7 @@ class Solution
         return f(0, -1, arr, n, dp);
         */
 
-        /*   	//memoization
+        /*  	//memoization
         vector<vector < int>> dp(n + 1, vector<int> (n + 1, 0));
         for (int ind = n - 1; ind >= 0; ind--)
         {
@@ -60,7 +60,8 @@ class Solution
         return curr_row[0];
         */
 
-       	//intuitve
+        /*
+       	//algorithmic
         vector<int> dp(n, 1);
         int ans = 1;
         for (int ind = 0; ind < n; ind++)
@@ -75,5 +76,25 @@ class Solution
             ans = max(ans, dp[ind]);
         }
         return ans;
+        */
+
+       	//binary search
+        vector<int> temp;
+        int len = 1;
+        temp.push_back(arr[0]);
+        for (int i = 1; i < n; i++)
+        {
+            if (arr[i] > temp.back())
+            {
+                temp.push_back(arr[i]);
+                len++;
+            }
+            else
+            {
+                int ind = lower_bound(temp.begin(), temp.end(), arr[i]) - temp.begin();
+                temp[ind] = arr[i];
+            }
+        }
+        return len;
     }
 };
