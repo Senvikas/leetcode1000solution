@@ -17,10 +17,6 @@ class Solution
 
            	//now sort and put the least empty bag at first position
             sort(capRoc.begin(), capRoc.end(), cmp);
-            for (auto p: capRoc)
-            {
-                cout << p.first << " " << p.second << endl;
-            }
             int cnt = 0;
             for (int i = 0; i < n; i++)
             {
