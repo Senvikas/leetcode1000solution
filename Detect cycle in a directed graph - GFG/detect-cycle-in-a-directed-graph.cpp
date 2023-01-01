@@ -6,7 +6,7 @@ using namespace std;
 class Solution {
   public:
   
-  bool dfs(int node, vector<int>adj[], int vis[], int path[])
+  bool dfs(int node, vector<int>adj[], vector<int>&vis,vector<int>&path)
   {
       vis[node] = 1;
       path[node] = 1;
@@ -28,8 +28,9 @@ class Solution {
   
     // Function to detect cycle in a directed graph.
     bool isCyclic(int V, vector<int> adj[]) {
-        int vis[V] = {0};
-        int path[V] = {0};
+        vector<int>vis(V, 0);
+        vector<int> path(V, 0);
+        
         
         for(int i=0; i<V; i++)
         {
