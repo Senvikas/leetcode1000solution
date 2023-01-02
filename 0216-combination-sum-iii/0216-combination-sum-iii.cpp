@@ -1,29 +1,45 @@
 class Solution
 {
-    void solve(vector<vector < int>> &ans, vector< int > &path, int boundary, int k, int ind)
-    {
-       	//base casse k-> target & boundary means numbers that sum up to target
-        if (boundary < 0 || k < 0) return;
-        if (boundary == 0 && k == 0)
+    private:
+        void findCombinations(int k, int n, int prev, vector<int> path, vector<vector< int>> &ans)
         {
-            ans.push_back(path);
+            if (n < 0)
+            {
+                path.clear();
+                return;
+            }
+            if (k == 0)
+            {
+                if (n == 0)
+                {
+                    ans.push_back(path);
+                }
+                path.clear();
+                return;
+            }
+
+            for (int i = prev + 1; i < 10; i++)
+            {
+                if (i == prev) continue;
+
+                if (i > n) break;
+                path.push_back(i);
+                findCombinations(k - 1, n - i, i, path, ans);
+                path.pop_back();
+
+               	//findCombinations(k, n-i, i, path, ans);
+            }
             return;
         }
-        for (int i = ind; i < 10; i++)
-        {
-            path.push_back(i);
-            solve(ans, path, boundary - 1, k - i, i + 1);
-            path.pop_back();
-        }
-        return;
-    }
 
     public:
+
         vector<vector < int>> combinationSum3(int k, int n)
         {
+
             vector<vector < int>> ans;
             vector<int> path;
-            solve(ans, path, k, n, 1);
+            findCombinations(k, n, 0, path, ans);
             return ans;
         }
 };
