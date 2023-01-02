@@ -48,13 +48,43 @@ class Solution
             adj[ind].push_back(val);
         }
 
-        for (int i = 0; i < n; i++)
+/*        for (int i = 0; i < n; i++)
         {
             bool ans = isCyclic(n, adj);
-            cout << "ans is : " << ans << endl;
             if (ans) return false;
         }
 
-        return true;
+        return true;           */  //approach 1
+        
+        //approach 2 by topological sort
+        vector<int>indegree(n, 0);
+        for(int i=0;  i<n; i++)
+        {
+            for(auto it : adj[i])
+            {
+                indegree[it]++;
+            }
+        }
+        
+        queue<int>q;
+        for(int i=0; i<n; i++)
+        {
+            if(indegree[i] == 0) q.push(i);
+        }
+        
+        vector<int>topoSorted;
+        while(!q.empty())
+        {
+            int node = q.front();
+            q.pop();
+            topoSorted.push_back(node);
+            for(auto it: adj[node])
+            {
+                indegree[it]--;
+                if(indegree[it] == 0) q.push(it);
+            }
+        }
+        
+        return topoSorted.size() == n;
     }
 };
