@@ -3,43 +3,28 @@ class Solution
     public:
         int evalRPN(vector<string> &tokens)
         {
-            if (tokens.empty()) return -1;
-            stack < long long > s;
-            for (int i = 0; i < tokens.size(); i++)
+            int n = tokens.size();
+            stack<int> st;
+            for (int i = 0; i < n; i++)
             {
-                if (isNum(tokens[i]))
+               	//case 1-> operator
+                if (tokens[i] == "+" || tokens[i] == "-" || tokens[i] == "*" || tokens[i] == "/")
                 {
-                    s.push(stoll(tokens[i]));
+                    int b = st.top();
+                    st.pop();
+                    int a = st.top();
+                    st.pop();
+                    int computed = 0;
+                    if (tokens[i] == "+") computed = a + b;
+                    if (tokens[i] == "-") computed = a - b;
+                    if (tokens[i] == "*") computed = a * b;
+                    if (tokens[i] == "/") computed = a / b;
+
+                    st.push(computed);
                 }
                 else
-                {
-                    long long tmp1 = s.top();
-                    s.pop();
-                    long long tmp2 = s.top();
-                    s.pop();
-                    if (tokens[i] == "+")
-                    {
-                        s.push(tmp2 + tmp1);
-                    }
-                    else if (tokens[i] == "-")
-                    {
-                        s.push(tmp2 - tmp1);
-                    }
-                    else if (tokens[i] == "*")
-                    {
-                        s.push(tmp2 *tmp1);
-                    }
-                    else if (tokens[i] == "/")
-                    {
-                        s.push(tmp2 / tmp1);
-                    }
-                }
+                    st.push(stoi(tokens[i]));
             }
-            return s.top();
-        }
-    private:
-        bool isNum(string s)
-        {
-            return s != "+" && s != "-" && s != "*" && s != "/";
+            return st.top();	//since the given constraints shows that there will always exist an answer.
         }
 };
