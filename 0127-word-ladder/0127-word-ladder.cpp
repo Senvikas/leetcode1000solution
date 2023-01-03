@@ -1,41 +1,41 @@
 class Solution
 {
     public:
-        int ladderLength(string b, string e, vector<string> &wl)
+        int ladderLength(string b, string e, vector<string> &l)
         {
-            unordered_set<string> st(wl.begin(), wl.end());
-            unordered_set<string> vis;
-            queue<string> q;
-            if (st.find(e) == st.end()) return 0;
+            unordered_set<string> given(l.begin(), l.end());
+
             int n = b.length();
-            int cnt = 1;
-            q.push(b);
-            vis.insert(b);
+            queue<pair<string, int>> q;
+            q.push({ b,
+                1 });
+            given.erase(b);
 
             while (!q.empty())
             {
-                int size = q.size();
-                while (size--)
+                auto word = q.front().first;
+                int steps = q.front().second;
+                q.pop();
+                if (word == e) return steps;
+
+                for (int i = 0; i < n; i++)
                 {
-                    auto w = q.front();
-                    q.pop();
-                    for (int i = 0; i < n; i++)
+                    char original = word[i];
+                    for (auto c = 'a'; c <= 'z'; c++)
                     {
-                        for (char c = 'a'; c <= 'z'; c++)
+                        word[i] = c;
+
+                        if (given.find(word) != given.end())
                         {
-                            auto nw = w;
-                            nw[i] = c;
-                            if (nw == e) return cnt + 1;
-                            else if (st.find(nw) != st.end() && vis.find(nw) == vis.end())
-                            {
-                                vis.insert(nw);
-                                q.push(nw);
-                            }
+                            given.erase(word);
+                            q.push({ word,
+                                steps + 1 });
                         }
                     }
+                    word[i] = original;
                 }
-                cnt++;
             }
-            return 0; //in case no possible ladder to rech from b to e.
+
+            return 0;
         }
 };
