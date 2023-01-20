@@ -1,32 +1,32 @@
 class Solution {
 public:
-    void update(set<vector<int>>&ans, vector<int>v, vector<int>nums, int l)
+    void findSubsequencesHelper(set<vector<int>>&subsequences, vector<int>currentSubsequence, vector<int>nums, int startIdx)
     {
-        for(int i=l+1; i<nums.size(); i++)
+        for(int i=startIdx+1; i<nums.size(); i++)
         {
-            if(nums[i]>=v[v.size()-1])
+            if(nums[i]>=currentSubsequence[currentSubsequence.size()-1])
             {
-                v.push_back(nums[i]);
-                ans.insert(v);
-                update(ans, v, nums, i);
-                v.pop_back();
+                currentSubsequence.push_back(nums[i]);
+                subsequences.insert(currentSubsequence);
+                findSubsequencesHelper(subsequences, currentSubsequence, nums, i);
+                currentSubsequence.pop_back();
             }
         }
     }
     vector<vector<int>> findSubsequences(vector<int>& nums) {
-        set<vector<int>>ans;
+        set<vector<int>>subsequences;
 
         for(int i=0; i<nums.size()-1; i++)
         {
-            vector<int>v;
-            v.push_back(nums[i]);
-            update(ans, v, nums,  i);
+            vector<int>currentSubsequence;
+            currentSubsequence.push_back(nums[i]);
+            findSubsequencesHelper(subsequences, currentSubsequence, nums, i);
         }
-        vector<vector<int>>res;
-        for(auto it:ans)
+        vector<vector<int>>result;
+        for(auto it:subsequences)
         {
-            res.push_back(it);
+            result.push_back(it);
         }
-        return res;
+        return result;
     }
 };
