@@ -1,6 +1,6 @@
 SELECT email
 FROM (
-  SELECT *
+  SELECT email
   FROM Person
   WHERE email IS NOT NULL
 ) AS t
