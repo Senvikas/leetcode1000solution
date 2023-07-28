@@ -1,26 +1,25 @@
-class Solution
-{
-    int solve(vector<int> &arr, int s, int e)
-    {
-        if (s > e)
-            return 0;
-        //choose_first -> if opponent chooses end................if opponent choose start
-        int choose_first = arr[s] + min(solve(arr, s + 1, e - 1), solve(arr, s + 2, e));
-        int choose_last = arr[e] + min(solve(arr, s + 1, e - 1), solve(arr, s, e - 2));
-        //choose-lase             if opponent chooses start      if he chooses last one
-
-        return max(choose_first, choose_last);
+class Solution {
+    map<pair<int, int>, int> memo;
+    vector<int> arr;
+    
+    int solve(int L, int R, bool turn) {
+        if (memo.find({L, R}) != end(memo))
+            return memo[{L, R}];
+        
+        int difL = turn ? arr[L] : -arr[L];
+        int difR = turn ? arr[R] : -arr[R];
+        
+        if (L == R) return difL;
+        
+        int chooseL = solve(L+1, R, !turn) + difL;
+        int chooseR = solve(L, R-1, !turn) + difR;
+        
+        if (turn) return memo[{L, R}] = max(chooseL, chooseR);
+        else      return memo[{L, R}] = min(chooseL, chooseR);
     }
-
-    public:
-        bool PredictTheWinner(vector<int> &nums)
-        {
-            int n = nums.size();
-            int sum = 0;
-            for (int i = 0; i < n; i++) sum += nums[i];
-            int bestScore = solve(nums, 0, n - 1);
-            if (bestScore >= sum - bestScore)
-                return true;
-            return false;
-        }
+public:
+    bool PredictTheWinner(vector<int>& nums) {
+        arr = nums;
+        return solve(0, size(arr)-1, 1) >= 0;
+    }
 };
