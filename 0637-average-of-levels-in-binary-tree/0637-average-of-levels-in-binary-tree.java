@@ -22,11 +22,11 @@ class Solution {
         
         while(!q.isEmpty()){
             int size = q.size();
-            List<Integer> level = new ArrayList<>();
+            Double sum = 0.0;
 
             for (int i = 0; i < size; i++) {
                 TreeNode node = q.poll();
-                level.add(node.val);
+                sum += node.val;
 
                 if (node.left != null) {
                     q.offer(node.left);
@@ -36,10 +36,7 @@ class Solution {
                     q.offer(node.right);
                 }
             }
-            int s = level.size();
-            Double sum = 0.0;
-            for(int it : level) sum += (it);
-            Double avg = sum/s;
+            Double avg = sum/size;
             ans.add(avg);
         }
         return ans;
