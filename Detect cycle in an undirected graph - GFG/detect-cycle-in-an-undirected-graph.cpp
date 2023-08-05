@@ -7,37 +7,17 @@ using namespace std;
 
 
 
-
-
-
-
-
-
-
 class Solution {
 public:
-    bool bfs(int i, vector<int>& vis, vector<int> adj[]) {
-        vis[i] = 1;
-        queue<pair<int, int>> q;
-        q.push({i, -1});
-
-        while (!q.empty()) {
-            auto front = q.front();
-            int node = front.first;
-            int parent = front.second;
-
-            for (auto adjnode : adj[node]) {
-                if (!vis[adjnode]) {
-                    vis[adjnode] = 1;
-                    q.push({adjnode, node});
-                } else if (parent != adjnode) {
-                    return true;
-                }
+    bool dfs(int node, int parent, vector<int>& vis, vector<int> adj[]) {
+        vis[node] = 1;
+        for (auto adjnode : adj[node]) {
+            if (!vis[adjnode]) {
+                if (dfs(adjnode, node, vis, adj)) return true;
+            } else if (parent != adjnode) {
+                return true;
             }
-
-            q.pop(); // Remove the explored node from the queue.
         }
-
         return false;
     }
 
@@ -45,10 +25,9 @@ public:
         vector<int> vis(V, 0);
         for (int i = 0; i < V; i++) {
             if (!vis[i]) {
-                if (bfs(i, vis, adj)) return true;
+                if (dfs(i, -1, vis, adj)) return true;
             }
         }
-
         return false;
     }
 };
