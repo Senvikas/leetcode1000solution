@@ -3,53 +3,44 @@
 using namespace std;
 
 // } Driver Code Ends
+
+
 class Solution {
 public:
-
-int ladderLength(string b, string e, vector<string> &l)
-        {
-            unordered_set<string> given(l.begin(), l.end());
-
-            int n = b.length();
-            queue<pair<string, int>> q;
-            q.push({ b,
-                1 });
-            given.erase(b);
-
-            while (!q.empty())
-            {
-                auto word = q.front().first;
-                int steps = q.front().second;
-                q.pop();
-                if (word == e) return steps;
-
-                for (int i = 0; i < n; i++)
-                {
-                    char original = word[i];
-                    for (auto c = 'a'; c <= 'z'; c++)
-                    {
-                        word[i] = c;
-
-                        if (given.find(word) != given.end())
-                        {
-                            given.erase(word);
-                            q.push({ word,
-                                steps + 1 });
-                        }
+    int wordLadderLength(string s, string t, vector<string>& l) {
+        unordered_set<string> st;
+        for (auto it : l) st.insert(it);
+        
+        if (st.find(t) == st.end()) return 0; // If target word 't' is not in the word list, return 0.
+        
+        queue<pair<string, int>> q;
+        q.push({s, 1});
+        
+        while (!q.empty()) {
+            auto p = q.front();
+            q.pop();
+            string w = p.first;
+            int cnt = p.second;
+            
+            for (int i = 0; i < w.size(); i++) {
+                string nw = w;
+                for (char ch = 'a'; ch <= 'z'; ch++) {
+                    nw[i] = ch;
+                    
+                    if (nw == t) return cnt + 1;
+                    
+                    if (st.find(nw) != st.end()) {
+                        q.push({nw, cnt + 1});
+                        st.erase(nw); // Remove the word from the set to avoid revisiting.
                     }
-                    word[i] = original;
                 }
             }
-
-            return 0;
         }
-
-
-    int wordLadderLength(string s, string t, vector<string>& w) {
         
-        return ladderLength(s, t, w);
+        return 0;
     }
 };
+
 
 //{ Driver Code Starts.
 int main(){
