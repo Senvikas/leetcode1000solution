@@ -6,68 +6,71 @@ using namespace std;
 // } Driver Code Ends
 //User function Template for C++
 
+
+
 class Solution {
 public:
+    vector<vector<string>> findSequences(string b, string e, vector<string>& l) {
+        set<string> st;
+        for (auto word : l)
+            st.insert(word);
 
+        if (st.find(e) == st.end())
+            return {};
 
+        vector<vector<string>> ans;
+        queue<vector<string>> q;
+        q.push({b});
 
+        bool found = false; // Flag to indicate if the target word is found
 
-vector<vector < string>> findLadders(string b, string e, vector<string> &l)
-        {
-            unordered_set<string> given(l.begin(), l.end());
-            int n = b.length();
-            queue<vector < string>> q;
-            q.push({ b });
-            int level = 0;
-            vector<string> used;
-            used.push_back(b);
-            vector<vector < string>> ans;
+        while (!q.empty() && !found) {
+            int size = q.size();
+            unordered_set<string> visited; // Track visited words at this level
 
-            while (!q.empty())
-            {
-                vector<string> v = q.front();
+            for (int i = 0; i < size; i++) {
+                auto v = q.front();
                 q.pop();
-               	//erase the already used word from the set
-                if (level < v.size())
-                {
-                    level++;
-                    for (auto s: used)
-                        given.erase(s);
-                }
+
                 auto word = v.back();
-                if (word == e)
-                {
-                    if (ans.size() == 0) ans.push_back(v);
-                    else if (ans[0].size() == v.size()) ans.push_back(v);
-                }
-                for (int i = 0; i < n; i++)
-                {
-                    char original = word[i];
-                    for (char c = 'a'; c <= 'z'; c++)
-                    {
-                        word[i] = c;
-                        if (given.count(word) > 0)
-                        {
-                            v.push_back(word);
-                            q.push(v);
-                            used.push_back(word);
-                            v.pop_back();
+                vector<string> words;
+
+                for (int i = 0; i < word.size(); i++) {
+                    auto nw = word;
+
+                    for (char ch = 'a'; ch <= 'z'; ch++) {
+                        nw[i] = ch;
+                        if (st.find(nw) != st.end()) {
+                            words.push_back(nw);
                         }
+                        nw = word;
                     }
-                    word[i] = original;
+                }
+
+                for (auto wordToAdd : words) {
+                    vector<string> newSequence = v;
+                    newSequence.push_back(wordToAdd);
+                    
+                    if (wordToAdd == e) {
+                        ans.push_back(newSequence);
+                        found = true; // Set the flag to stop when target word is found
+                    }
+                    q.push(newSequence);
+                    visited.insert(wordToAdd);
                 }
             }
-            return ans;
+
+            // Remove visited words from the set to avoid revisiting them
+            for (const string& word : visited) {
+                st.erase(word);
+            }
         }
-
-
-
-
-
-    vector<vector<string>> findSequences(string s, string t, vector<string>& l) {
-        return findLadders(s, t, l);
+        return ans;
     }
 };
+
+
+
 
 //{ Driver Code Starts.
 
