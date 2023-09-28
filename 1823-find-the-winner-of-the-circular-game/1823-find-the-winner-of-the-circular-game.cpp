@@ -1,15 +1,16 @@
-class Solution
-{
-    int solve(int n, int k)
-    {
-        if (n == 1)
-            return 0;
-        return (solve(n - 1, k) + k) % n;
+class Solution {
+public:
+    int findTheWinner(int n, int k) {
+        vector<int> arr;
+        for(int i=0; i<n; i++)arr.push_back(i+1);
+        
+        int i = 0;
+        while (arr.size() > 1) {
+        i = (i + k - 1) % arr.size(); // Update i to skip k-1 elements
+        auto it = arr.begin() + i;
+        //cout << *it << endl;
+        arr.erase(it);
     }
-    public:
-        int findTheWinner(int n, int k)
-        {
-            int ans = solve(n, k) + 1;
-            return ans;
-        }
+        return arr[0];
+    }
 };
