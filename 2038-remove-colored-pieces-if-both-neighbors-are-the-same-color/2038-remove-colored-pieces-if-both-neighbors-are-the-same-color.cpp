@@ -1,14 +1,27 @@
+#include <string>
+
 class Solution {
 public:
-    bool winnerOfGame(string c) {
+    bool winnerOfGame(std::string colors) {
         int alice = 0, bob = 0;
-        for(int i=1; i<c.size()-1; i++){
-            if(c[i-1] == c[i] && c[i] == c[i+1]){
-                if(c[i] == 'A')alice++;
-                else bob++;
+        int l = 0;
+        
+        for (int r = 0; r < colors.length(); ++r) {
+            if (colors[l] != colors[r]) {
+                l = r;
+            }
+            
+            int extra = r - l + 1 - 2;
+            
+            if (extra > 0) {
+                if (colors[r] == 'A') {
+                    alice += 1;
+                } else {
+                    bob += 1;
+                }
             }
         }
-        //cout << alice << " " << bob << endl;
+        
         return alice > bob;
     }
 };
