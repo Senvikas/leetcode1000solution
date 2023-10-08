@@ -1,34 +1,21 @@
-class Solution
-{
-    public:
-
-       	//WILL GIVE TLE
-        int solve_recursively(vector<vector < int>> &arr, int i, int j, int n)
-        {
-           	//base case 
-            if (i >= n) return 0;
-            int d = arr[i][j] + solve_recursively(arr, i + 1, j, n);
-            int dg = arr[i][j] + solve_recursively(arr, i + 1, j + 1, n);
-            return min(d, dg);
-        }
-
-    int solve_mem(vector<vector < int>> &arr, int i, int j, int n, vector< vector< int>> &dp)
-    {
-       	//base case 
-        if (i >= n) return 0;
-
-        if (dp[i][j] != -1) return dp[i][j];
-        int d = arr[i][j] + solve_mem(arr, i + 1, j, n, dp);
-        int dg = arr[i][j] + solve_mem(arr, i + 1, j + 1, n, dp);
-        return dp[i][j] = min(d, dg);
+class Solution {
+public:
+    int rows;
+    vector<vector<int>> dp;
+    int solve(vector<vector<int>> &tr, int i, int j){
+        if(i == rows-1) return dp[i][j] = tr[i][j];
+        
+        if(dp[i][j] != -1) return dp[i][j];
+         
+        int d = tr[i][j] + solve(tr, i+1, j);
+        int dig = tr[i][j] + solve(tr, i+1, j+1);
+        
+        return dp[i][j] = min(d, dig);
     }
-    int minimumTotal(vector<vector < int>> &triangle)
-    {
-        int n = triangle.size();
-       	//return solve_recursively(triangle,0, 0, n);
-
-       	//memoization
-        vector<vector < int>> dp(n, vector<int> (n, -1));
-        return solve_mem(triangle, 0, 0, n, dp);
+    
+    int minimumTotal(vector<vector<int>>& triangle) {
+        rows = triangle.size();
+        dp = vector<vector<int>>(rows, vector<int>(rows, -1));
+        return solve(triangle, 0, 0);
     }
 };
