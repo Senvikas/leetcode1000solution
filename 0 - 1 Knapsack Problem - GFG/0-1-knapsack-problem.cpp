@@ -31,22 +31,23 @@ class Solution
        //vector<vector<int>> dp(1001, vector<int>(1001, 0));
        //return solve(W, wt, val, n, n-1, dp);
        
-       vector<int> prev(W+1, 0), curr(W+1, 0);
+       vector<int> prev(W+1, 0);   // curr(W+1, 0);
        for(int weight=wt[0]; weight<=W; weight++){
           prev[weight] = val[0];
        }
        
        //changing parmaerters are ind and weight
        for(int ind=1; ind<n; ind++){
-           for(int weight=0; weight<=W; weight++){
+           for(int weight=W; weight>=0; weight--){
                 int take = 0;
                 if(weight >= wt[ind]) take = val[ind] + prev[weight-wt[ind]];
                 
                 int leave = prev[weight];
                 
-                curr[weight] = max(take, leave);
+                // curr[weight] = max(take, leave);
+                prev[weight] = max(take, leave);
            }
-           prev = curr;
+           //prev = curr;
        }
        
        
