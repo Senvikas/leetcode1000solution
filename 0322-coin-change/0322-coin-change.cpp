@@ -15,9 +15,26 @@ public:
     }
     
     int coinChange(vector<int>& coins, int amount) {
-        vector<vector<int>> dp(12, vector<int>(10001, -1));
-        int ans = solve(coins, amount, 0, dp);
-        if(ans >= 1e8) return -1;
-        return ans;
+        //vector<vector<int>> dp(coins.size(), vector<int>(amount+1, -1));
+        // int ans = solve(coins, amount, 0, dp);
+        // if(ans >= 1e8) return -1;
+        // return ans;
+        
+        int n = coins.size();
+        vector<vector<int>> dp(n + 1, vector<int>(amount + 1, INT_MAX - 1));
+
+        for (int i = 0; i <= n; i++) {
+            dp[i][0] = 0; // Base case: no coins are needed to make change for amount 0.
+        }
+
+        for (int i = 1; i <= n; i++) {
+            for (int am = 1; am <= amount; am++) {
+                int take = (am >= coins[i - 1]) ? 1 + dp[i][am - coins[i - 1]] : INT_MAX - 1;
+                int leave = dp[i - 1][am];
+                dp[i][am] = min(take, leave);
+            }
+        }
+
+        return (dp[n][amount] == INT_MAX - 1) ? -1 : dp[n][amount];
     }
 };
