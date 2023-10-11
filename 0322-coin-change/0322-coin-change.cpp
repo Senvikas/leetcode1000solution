@@ -1,25 +1,23 @@
 class Solution {
 public:
-    int f(vector<int>& c, int ind, int t, vector<vector<int>>&dp)
-    {
-        //if(t == 0) return 0;
-        if(ind == 0) 
-        {
-           if(t%c[ind] == 0) return t/c[ind];
-            return 1e8;
-        }
-        if(dp[ind][t] != -1) return dp[ind][t];
+    int solve(vector<int> &arr, int am, int ind, vector<vector<int>> &dp){
+        //base case 
+        if(am == 0) return 0;
+        if(ind >= arr.size()) return 1e8;
         
-        int exc = f(c, ind-1, t, dp);
-        int inc = 1e8;
-        if(c[ind] <= t) inc = 1 + f(c, ind, t-c[ind], dp);
+        if(dp[ind][am] != -1) return dp[ind][am];
+        int take = 1e8;
+        if(am >= arr[ind]) take = 1 + solve(arr, am-arr[ind], ind, dp);
         
-        return dp[ind][t] = min(exc, inc);
+        int leave = solve(arr, am, ind+1, dp);
+        
+        return dp[ind][am] = min(take, leave);
     }
     
     int coinChange(vector<int>& coins, int amount) {
-        int n = coins.size();
-        vector<vector<int>>dp(n, vector<int>(amount+1, -1));
-      int  ans = f(coins, n-1, amount, dp); return ans == 1e8 ? -1 : ans;
+        vector<vector<int>> dp(12, vector<int>(10001, -1));
+        int ans = solve(coins, amount, 0, dp);
+        if(ans >= 1e8) return -1;
+        return ans;
     }
 };
