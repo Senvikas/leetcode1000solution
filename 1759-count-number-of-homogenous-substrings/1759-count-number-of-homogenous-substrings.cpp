@@ -1,18 +1,14 @@
 class Solution {
 public:
     int countHomogenous(string s) {
-        int m = 1e9+7;
-        int n = s.size(); cout<<n<<endl;
-        vector<int>suff(n, 0);
-        suff[0] = 1;
-        int ans = 01;
-        for(int i=1; i<n; i++)
-        {
-            suff[i] = 1;
-            if(s[i] == s[i-1])
-                suff[i] = (suff[i] + suff[i-1])%m;
-            ans = (ans + suff[i])%m;
+        int count = 0, temp = 0;
+        for(int i=0; i < s.size(); i++){
+            temp++;
+            if(temp > 1000000007) temp = temp%(1000000007);
+            count+=temp;
+            if(count > 1000000007) count = count%(1000000007);
+            if(s[i]!=s[i+1]) temp = 0;
         }
-        return ans%m;
+        return count;
     }
 };
