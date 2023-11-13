@@ -12,9 +12,8 @@ class Solution {
                 if(stack.isEmpty() == false && stack.peek() == '(') stack.pop();
             }
             else if(ch == ')'){
-                closeC++; //System.out.println(stack.peek()); 
+                closeC++; 
                 if(stack.isEmpty() == false && stack.peek() == '(') {
-                    System.out.println(stack.isEmpty()); 
                     stack.pop();
                     }
                 if(openC + starC < closeC) return false;
@@ -25,8 +24,8 @@ class Solution {
                 stack.push('(');
             }
         }
-        if(stack.isEmpty() == false && stack.peek() == '(') {System.out.println("peek ("); return false;}
-        if(closeC > openC+starC+1) {System.out.println("end"); return false;}
+        if(stack.isEmpty() == false && stack.peek() == '(') return false;
+        if(closeC > openC+starC+1) return false;
         return true;
     }
 }
