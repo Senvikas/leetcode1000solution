@@ -5,7 +5,6 @@ class Solution
         {
             int l1 = word1.size(), l2 = word2.size();
             if (l1 != l2) return false;
-            cout << l1 << endl;
             map<char, int> mp1, mp2;
             for (auto &c: word1)
                 mp1[c]++;
