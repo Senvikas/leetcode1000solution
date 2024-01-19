@@ -42,7 +42,7 @@ class Solution
                    }
                }
 
-               return* min_element(dp[n - 1].begin(), dp[n - 1].end());        */
+               return *min_element(dp[n - 1].begin(), dp[n - 1].end());        */
 
        	//space optimization
         vector<int> prev(n, 0), curr(n, 0);
