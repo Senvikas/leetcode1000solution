@@ -1,6 +1,8 @@
 class Solution
 {
     public:
+    //Time complexity -> O(N)
+    //space complexity -> O(N)
         int evalRPN(vector<string> &tokens)
         {
             int n = tokens.size();
