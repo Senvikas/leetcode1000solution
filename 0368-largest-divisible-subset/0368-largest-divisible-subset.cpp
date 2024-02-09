@@ -16,7 +16,7 @@ class Solution
                     }
                 }
             }
-            int maxi = *max_element(dp.begin(), dp.end());
+            int maxi = *max_element(dp.begin(), dp.end()); 
             int max_idx = 0;
             for (int i = 0; i < n; i++)
             {
@@ -26,16 +26,13 @@ class Solution
                     break;
                 }
             }
-
            	// start taking the element from max_index
-
             vector<int> ans;
 
             int i = max_idx;
             ans.push_back(nums[i]);
             int prev = nums[i];
-            maxi--;
-            i--;
+            maxi--; i--;
             while (i >= 0 && maxi)
             {
                 if (dp[i] == maxi && prev % nums[i] == 0)
