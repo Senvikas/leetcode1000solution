@@ -1,41 +1,44 @@
-class Solution
-{
-    public:
-        int ladderLength(string b, string e, vector<string> &l)
-        {
-            unordered_set<string> given(l.begin(), l.end());
+using psi = pair<string,int>;
+class Solution {
+public:
+    int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
+        auto it = find(wordList.begin(), wordList.end(), endWord);
+        if (it == wordList.end()) return 0; // endWord not found in wordList
 
-            int n = b.length();
-            queue<pair<string, int>> q;
-            q.push({ b,
-                1 });
-            given.erase(b);
+        //Prepare a set of given words, to find in o(log n) time.
+        set<string> st(wordList.begin(), wordList.end());
 
-            while (!q.empty())
-            {
-                auto word = q.front().first;
-                int steps = q.front().second;
-                q.pop();
-                if (word == e) return steps;
+        queue<psi> q;
+        q.push({beginWord, 1});
 
-                for (int i = 0; i < n; i++)
+        while(!q.empty()){
+            psi frontNode = q.front();
+            q.pop();
+
+            string originalw = frontNode.first;
+            int len = frontNode.second;
+
+            
+            for(int i=0; i<originalw.size(); i++){
+                auto word = originalw;
+
+                for(auto ch = 'a'; ch <= 'z'; ch++)
                 {
-                    char original = word[i];
-                    for (auto c = 'a'; c <= 'z'; c++)
+                    word[i] = ch;
+
+                    if(word == endWord) return len + 1;
+
+                    if(st.find(word) != st.end())
                     {
-                        word[i] = c;
-
-                        if (given.find(word) != given.end())
-                        {
-                            given.erase(word);
-                            q.push({ word,
-                                steps + 1 });
-                        }
+                        st.erase(word);
+                        q.push({word, len+1});
                     }
-                    word[i] = original;
                 }
-            }
 
-            return 0;
+            }
+            // st.erase(originalw);  // removing a bit above to resolve TLE
         }
+
+        return 0; // Flow should not come till here.
+    }
 };
