@@ -26,11 +26,43 @@ public:
     }
     
     int cherryPickup(vector<vector<int>>& grid) {
-        m = grid.size();
-        n = grid[0].size();
-        dp.assign(m, vector<vector<int>>(m, vector<int>(n, -1)));
-        //dp = vector<vector<vector<int>>>>(m, vector<vector<int>>(m, vector<int>(n, -1)));
-        return solve(grid, 0, 0, 0, n - 1);
+        int m = grid.size();
+        int n = grid[0].size();
+
+        vector<vector<vector<int>>> dp(m, vector<vector<int>>(n, vector<int>(n, -1)));
+
+        // Base case
+        for(int j1 = 0; j1 < n; j1++) {
+            for(int j2 = 0; j2 < n; j2++) {
+                if(j2 == j1)
+                    dp[m - 1][j1][j2] = grid[m - 1][j1];
+                else 
+                    dp[m - 1][j1][j2] = grid[m - 1][j1] + grid[m - 1][j2];
+            }
+        }
+
+        for(int i = m - 2; i >= 0; i--) {
+            for(int j1 = 0; j1 < n; j1++) {
+                for(int j2 = 0; j2 < n; j2++) {
+                    // Both are in the same cell
+                    int ans;
+                    if(j1 == j2) ans = grid[i][j1];
+                    else ans = grid[i][j1] + grid[i][j2];
+
+                    // Three movements
+                    int collect = INT_MIN;
+                    for(int mj1 = -1; mj1 <= 1; mj1++) {
+                        for(int mj2 = -1; mj2 <= 1; mj2++) {
+                            if(j1 + mj1 >= 0 && j1 + mj1 < n && j2 + mj2 >= 0 && j2 + mj2 < n)
+                                collect = max(collect, dp[i + 1][j1 + mj1][j2 + mj2]);
+                        }
+                    }
+                    dp[i][j1][j2] = ans + collect;
+                }
+            }
+        }
+
+        return dp[0][0][n - 1];
     }
 
 };
