@@ -1,5 +1,32 @@
 class Solution {
 public:
+        int spaceOpt(vector<vector<int>> &triangle)
+        {
+            int rows = triangle.size();
+            vector<int> next(rows, 0);
+
+            // base case -> if(i == rows-1) return dp[i][j] = tr[i][j];
+            for (int col = 0; col < rows; col++)
+            {
+                next[col] = triangle[rows - 1][col];
+            }
+
+            for (int row = rows - 2; row >= 0; row--)
+            {
+                //vector<int> curr(rows, 0);
+                for (int col = 0; col <= row; col++)
+                {
+                    int down = next[col];
+                    int diag = next[col + 1];
+
+                    //curr[col] = min(down, diag) + triangle[row][col];
+                    next[col] = min(down, diag) + triangle[row][col];
+                }
+                //next = curr;
+            }
+
+            return next[0];
+        }
     int tabulation(vector<vector<int>> &triangle){
         int rows = triangle.size();
         vector<vector<int>> dp(rows, vector<int>(rows, 0));
@@ -40,6 +67,6 @@ public:
         dp = vector<vector<int>>(rows, vector<int>(rows, -1));
         //return solve(triangle, 0, 0);
         
-        return tabulation(triangle);
+        return spaceOpt(triangle);
     }
 };
