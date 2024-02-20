@@ -20,9 +20,10 @@ class Solution
         int t_sum = 0;
         int n = arr.size();
         for (auto &x: arr) t_sum += x;
-        cout << t_sum << endl;
+        //cout << t_sum << endl;
         if (t_sum & 1) return false;
         int k = t_sum / 2 + 1;
+        //cout << k << endl;
         /*    vector<vector < int>> dp(201, vector < int>(k,-1));
                return solve(arr, k-1, n - 1, dp);            */
 
@@ -47,7 +48,7 @@ class Solution
        	//further space optimization
         vector<bool> prev(k, false), curr(k, false);
         prev[0] = true;
-        if (arr[0] < k) prev[arr[0]] = true;
+        if (arr[0] <= k) prev[arr[0]] = true;
         for (int ind = 1; ind < n; ind++)
         {
             for (int tar = 1; tar < k; tar++)
