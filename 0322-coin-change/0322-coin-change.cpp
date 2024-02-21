@@ -14,13 +14,42 @@ public:
         return dp[ind][am] = min(take, leave);
     }
     
+
+
+    int tableFillingApp(int n, vector<int> &coins, int amount) {
+    // Initialize the dp array with a larger value
+    vector<vector<int>> dp(n + 1, vector<int>(amount + 1, amount + 1));
+
+    // Base case for amount = 0, no coins are needed
+    for (int i = 0; i <= n; i++) 
+        dp[i][0] = 0;
+
+    // Filling in DP table
+    for (int ind = 1; ind <= n; ind++) {
+        for (int am = 1; am <= amount; am++) {
+            int notPick = dp[ind - 1][am];
+
+            int pick = amount + 1; // Initialize pick with a larger value
+            if (am >= coins[ind - 1]) 
+                pick = 1 + dp[ind][am - coins[ind - 1]]; // Corrected the index here
+
+            dp[ind][am] = min(pick, notPick);
+        }
+    }
+
+    return dp[n][amount] > amount ? -1 : dp[n][amount]; // Return -1 if amount is not achievable
+}
+    
     int coinChange(vector<int>& coins, int amount) {
-        //vector<vector<int>> dp(coins.size(), vector<int>(amount+1, -1));
+        //vector<vector<int>> dp(coins.size(), vector<int>(amount+1, 1e8));
         // int ans = solve(coins, amount, 0, dp);
         // if(ans >= 1e8) return -1;
         // return ans;
         
         int n = coins.size();
+        
+        return tableFillingApp(n, coins, amount);
+        
         vector<vector<int>> dp(n + 1, vector<int>(amount + 1, INT_MAX - 1));
 
         for (int i = 0; i <= n; i++) {
