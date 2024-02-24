@@ -9,13 +9,13 @@ public:
         int buy = 0, sell = 0;
         if(cb){
             int b = 0;
-                if(cap) b = -pr[ind] + f(ind+1, 0, pr, n, cap-1, dp);
+                if(cap) b = -pr[ind] + f(ind+1, 0, pr, n, cap, dp);
                      int nb = 0 + f(ind+1, 1, pr, n, cap, dp);
             
             buy = max(b, nb);
             
         }else{
-            int sel = pr[ind] + f(ind+1, 1, pr, n, cap, dp);
+            int sel = pr[ind] + f(ind+1, 1, pr, n, cap-1, dp);
             int notSell = f(ind+1, 0, pr, n, cap, dp);
             sell = max(sel, notSell);
         }
@@ -25,8 +25,8 @@ public:
     
     int maxProfit(vector<int>& prices) {
         int n = prices.size();
-        vector<vector<vector<int>>> dp(n+1, vector<vector<int>>(2, vector<int>(3, 0)));
-        //return f(0, 1, prices, n, 2, dp);
+        vector<vector<vector<int>>> dp(n+1, vector<vector<int>>(2, vector<int>(3, -1)));
+        return f(0, 1, prices, n, 2, dp);
 //         for(int i=0; i<2; i++){
 //             for(int j=0; j<3; j++){
 //                 dp[n][i][j] = 0;    
