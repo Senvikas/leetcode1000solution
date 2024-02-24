@@ -1,5 +1,25 @@
 class Solution {
 public:
+    int tabulation(string &text1, string &text2){
+        int m = text1.size(), n = text2.size();
+        vector<vector<int>> dp(m+1, vector<int>(n+1, 0));
+        
+        //base case, for ind1 = 0 and ind2 anything -> 0 and vise versa, but already 0
+        
+        for(int ind1=1; ind1<=m; ind1++){
+            for(int ind2=1; ind2<=n; ind2++){
+                //if matches
+                if(text1[ind1-1] == text2[ind2-1]){  //for shifting added -1
+                    dp[ind1][ind2] = 1 + dp[ind1-1][ind2-1];
+                }
+                //else, otherwise
+                else dp[ind1][ind2] = 0 + max(dp[ind1-1][ind2], dp[ind1][ind2-1]);
+            }
+        }
+        
+        return dp[m][n];
+    }
+    
     int solveRec(int ind1, int ind2, string &text1, string &text2, 
                 vector<vector<int>> &dp){
         //base case
@@ -24,10 +44,10 @@ public:
         
         int m = text1.size(), n = text2.size();
         
-        vector<vector<int>> dp(m+1, vector<int>(n+1, -1));
-        ans = solveRec(m, n, text1, text2, dp);
+        //vector<vector<int>> dp(m+1, vector<int>(n+1, -1));
+        //ans = solveRec(m, n, text1, text2, dp);
         
-        //vector<vector<int>> dp(m+1, vector<int>(n+1, 0));
+        ans = tabulation(text1, text2);
         
         
         
