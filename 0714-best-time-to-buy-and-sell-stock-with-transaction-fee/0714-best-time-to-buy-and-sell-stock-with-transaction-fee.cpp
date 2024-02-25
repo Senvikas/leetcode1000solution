@@ -11,7 +11,18 @@ public:
     }
     int maxProfit(vector<int>& prices, int fee) {
         n = prices.size();
-        vector<vector<int>> dp(n+1, vector<int>(2, -1));
-        return f(0, 1, fee, prices, dp);
+        vector<vector<int>> dp(n+1, vector<int>(2, 0));
+        //return f(0, 1, fee, prices, dp);
+        
+        for(int ind=n-1; ind>=0; ind--){
+            //for(int cb=0; cb<2; cb++){
+                
+                dp[ind][1] = max(-prices[ind] + dp[ind+1][0], 0 + dp[ind + 1][1]);
+                dp[ind][0] = max(prices[ind] - fee + dp[ind+1][1], 0 + dp[ind+1][0]);
+                
+            //}
+        }
+        
+        return dp[0][1];
     }
 };
