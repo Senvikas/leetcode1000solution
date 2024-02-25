@@ -1,33 +1,17 @@
 class Solution {
 public:
-
-    
-int getRes(vector<int> &Arr,int ind,int buy,int n,int fee,vector<vector<int>> &dp){
-
-    if(ind==n) return 0; //base case
-    
-    if(dp[ind][buy]!=-1)
-        return dp[ind][buy];
+    int n;
+    int f(int ind, int cb, int fee, vector<int> &pr, vector<vector<int>> &dp){
+        if(ind >= n) return 0;
         
-    int profit;
-    
-    if(buy==0){// We can buy the stock
-        profit = max(0+getRes(Arr,ind+1,0,n,fee,dp), -Arr[ind] + getRes(Arr,ind+1,1,n,fee,dp));
+        if(dp[ind][cb] != -1) return dp[ind][cb];
+        
+        if(cb) return dp[ind][cb] = max(-pr[ind] + f(ind+1, 0, fee, pr, dp), 0 + f(ind+1, 1, fee, pr, dp));
+        return dp[ind][cb] = max(pr[ind] - fee + f(ind+1, 1, fee, pr, dp), 0 + f(ind+1, 0, fee, pr, dp)); // at selling pay the fee.
     }
-    
-    if(buy==1){// We can sell the stock
-        profit = max(0+getRes(Arr,ind+1,1,n,fee,dp), Arr[ind] -fee + getRes(Arr,ind+1,0,n,fee,dp));
-    }
-    
-    return dp[ind][buy] = profit;
-}
-
-    int maxProfit(vector<int>& Arr, int fee) {
-
-        vector<vector<int>> dp(Arr.size(),vector<int>(2,-1));
-    
-        if(Arr.size()==0) return 0;
-        int res = getRes(Arr,0,0,Arr.size(),fee,dp);
-        return res;
+    int maxProfit(vector<int>& prices, int fee) {
+        n = prices.size();
+        vector<vector<int>> dp(n+1, vector<int>(2, -1));
+        return f(0, 1, fee, prices, dp);
     }
 };
