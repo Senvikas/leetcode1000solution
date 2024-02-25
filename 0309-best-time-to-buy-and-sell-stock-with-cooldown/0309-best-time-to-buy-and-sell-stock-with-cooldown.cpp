@@ -14,17 +14,21 @@ class Solution
     int maxProfit(vector<int> &prices)
     {
         n = prices.size();
-        vector<vector < int>> dp(n + 2, vector<int> (2, 0));
+        //vector<vector < int>> dp(n + 2, vector<int> (2, 0));
        	//return f(0, 1, prices, dp);
+        vector<int> next2(2, 0), next(2, 0), curr(2, 0);
 
         for (int ind = n - 1; ind >= 0; ind--)
         {
                 // removed cb cond, when cb = 1, first will execute and when 0 second.
-                dp[ind][1] = max(-prices[ind] + dp[ind + 1][0], 0 + dp[ind + 1][1]);
+                curr[1] = max(-prices[ind] + next[0], 0 + next[1]);
             
-                dp[ind][0] = max(prices[ind] + dp[ind + 2][1], 0 + dp[ind + 1][0]);
+                curr[0] = max(prices[ind] + next2[1], 0 + next[0]);
+            
+            next2 = next;
+            next = curr;
         }
 
-        return dp[0][1];
+        return curr[1];
     }
 };
