@@ -1,27 +1,46 @@
 class Solution {
-    vector<vector<int>> dp;
-    int n;
-    int m;
-    int optimize(vector<int>& cuts, int i, int j)
-    {
-        if (i>=j-1) {dp[i][j] = 0; return 0;}
-        if (dp[i][j] != INT_MAX) return dp[i][j];
-        int x = cuts[j]-cuts[i];
-        for(int k=i+1; k<j; k++)
-        {
-            // cout << cuts[j] << " - "  << cuts[i] << "= " << x << endl;
-            dp[i][j] = min(dp[i][j], x + optimize(cuts, k, j) + optimize(cuts, i, k));
-        }
-        return dp[i][j];
-    }
 public:
-    int minCost(int n_, vector<int>& cuts) {
-        cuts.push_back(0);
-        cuts.push_back(n_);
-        int n = n_;
-        int m = cuts.size();
-        dp.resize(m+1,vector<int>(m+1,INT_MAX));
-        sort(cuts.begin(),cuts.end());
-        return(optimize(cuts,0,m-1));
+    int f(int i, int j, vector<int> &cuts, vector<vector<int>> &dp){
+        if(i>j) return 0;
+
+        if(dp[i][j] != -1) return dp[i][j];
+
+        int mini = INT_MAX;
+        for(int ind=i; ind<=j; ind++){
+            int cost = cuts[j+1]-cuts[i-1] + f(i, ind-1, cuts, dp) + f(ind+1, j, cuts, dp);
+
+            mini = min(mini, cost);
+        }
+
+        return dp[i][j] = mini;
     }
+
+
+    int minCost(int n, vector<int> &cuts){
+        int c = cuts.size();
+        cuts.push_back(0);
+        cuts.push_back(n);
+
+        sort(cuts.begin(), cuts.end());
+        vector<vector<int>> dp(c+2, vector<int>(c+2, 0));
+
+        for(int i=c; i>=1; i--){
+            for(int j=1; j<=c; j++){
+                if(i > j) continue;
+                int mini = INT_MAX;
+                for(int ind=i; ind<=j; ind++){
+
+                    int cost = cuts[j+1]-cuts[i-1] + dp[i][ind-1] + dp[ind+1][j];
+                    mini = min(mini, cost);
+                }
+
+                dp[i][j] = mini;
+
+            }
+        }
+        return dp[1][c];
+
+        return f(1, c, cuts, dp);
+    }
+    
 };
