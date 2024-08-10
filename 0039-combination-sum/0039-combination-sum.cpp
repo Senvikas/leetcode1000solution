@@ -1,29 +1,28 @@
 class Solution {
 public:
-    void solve(vector<int> &candi, vector<vector<int>> &ans, vector<int> tmp, int t, int ind){
-        if(ind >= candi.size() || t < 0) return ;
-        
-        if(t == 0){
-            ans.push_back(tmp);
+    void findCombos(vector<int> &candidates, vector<vector<int>> &ans, vector<int> subs, int target, int ind, int n){
+        if(ind >= n) return;
+        if(target == 0){
+            ans.push_back(subs);
             return;
         }
         
-        //choose & not to choose
-        if(candi[ind] <= t){
-            t -= candi[ind];
-            tmp.push_back(candi[ind]);
-            solve(candi, ans, tmp, t, ind);
-            t += candi[ind];
-            tmp.pop_back();
+        if(candidates[ind] <= target){
+            subs.push_back(candidates[ind]);
+            findCombos(candidates, ans, subs, target-candidates[ind], ind, n);
+            subs.pop_back();
         }
         
-        solve(candi, ans, tmp, t, ind+1);
+        findCombos(candidates, ans, subs, target, ind+1, n);
+        
         return;
     }
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
         vector<vector<int>> ans;
-        sort(candidates.begin(), candidates.end());
-        solve(candidates, ans, {}, target, 0);
+        vector<int> subs;
+        
+        findCombos(candidates, ans, subs, target, 0, candidates.size());
+        
         return ans;
     }
 };
