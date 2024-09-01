@@ -9,8 +9,18 @@ public:
            
             unique_fruits[current_fruit_type]++;
 
-
-            while(unique_fruits.size() > 2){
+            //better
+            // while(unique_fruits.size() > 2){
+            //     int start_fruit_type = fruits[window_start];
+            //     unique_fruits[start_fruit_type]--;
+            //     if(unique_fruits[start_fruit_type] == 0) {
+            //         unique_fruits.erase(start_fruit_type);
+            //     }
+            //     window_start++;
+            // }
+            
+            //optimal
+            if(unique_fruits.size() > 2){
                 int start_fruit_type = fruits[window_start];
                 unique_fruits[start_fruit_type]--;
                 if(unique_fruits[start_fruit_type] == 0) {
@@ -18,7 +28,8 @@ public:
                 }
                 window_start++;
             }
-
+            //check needs with optimal
+            if(unique_fruits.size() <= 2)
             max_length = max(max_length, window_end - window_start + 1);
             window_end++;
         }
