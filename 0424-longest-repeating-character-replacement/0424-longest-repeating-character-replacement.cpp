@@ -10,9 +10,10 @@ public:
             max_freq = max(max_freq, freq_count[s[window_end] - 'A']);
 
             
-            while(window_end - window_start + 1 - max_freq > k){
+            // while(window_end - window_start + 1 - max_freq > k){
+            if(window_end - window_start + 1 - max_freq > k){
                 freq_count[s[window_start] - 'A']--;
-                for(int i=0; i<26; i++) max_freq = max(max_freq, freq_count[i]);
+                // for(int i=0; i<26; i++) max_freq = max(max_freq, freq_count[i]);
                 window_start++;
             }
 
