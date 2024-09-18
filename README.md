@@ -8,11 +8,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0008-string-to-integer-atoi](https://github.com/Senvikas/leetcode1000solution/tree/master/0008-string-to-integer-atoi) |
 | [0076-minimum-window-substring](https://github.com/Senvikas/leetcode1000solution/tree/master/0076-minimum-window-substring) |
+| [0179-largest-number](https://github.com/Senvikas/leetcode1000solution/tree/master/0179-largest-number) |
 | [0424-longest-repeating-character-replacement](https://github.com/Senvikas/leetcode1000solution/tree/master/0424-longest-repeating-character-replacement) |
 ## Array
 |  |
 | ------- |
 | [0015-3sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0015-3sum) |
+| [0179-largest-number](https://github.com/Senvikas/leetcode1000solution/tree/master/0179-largest-number) |
 | [0940-fruit-into-baskets](https://github.com/Senvikas/leetcode1000solution/tree/master/0940-fruit-into-baskets) |
 | [0966-binary-subarrays-with-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0966-binary-subarrays-with-sum) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Senvikas/leetcode1000solution/tree/master/1370-count-number-of-nice-subarrays) |
@@ -49,6 +51,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0015-3sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0015-3sum) |
+| [0179-largest-number](https://github.com/Senvikas/leetcode1000solution/tree/master/0179-largest-number) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -57,4 +60,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3556-final-array-state-after-k-multiplication-operations-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3556-final-array-state-after-k-multiplication-operations-ii) |
+## Greedy
+|  |
+| ------- |
+| [0179-largest-number](https://github.com/Senvikas/leetcode1000solution/tree/master/0179-largest-number) |
 <!---LeetCode Topics End-->
