@@ -1,95 +1,120 @@
-class Node{
-    private:
-        Node* links[2];
-    public:
-        bool childPresent(int bit){
-            return links[bit] != NULL;
-        }
-    
-        void put(int bit, Node* node){
-            links[bit] = node;
-        }
-    
-        Node* get(int bit){
-            return links[bit];
-        }
+class Node {
+public:
+    Node* links[2];
+
+    Node() {
+        links[0] = nullptr;
+        links[1] = nullptr;
+    }
+
+    bool containsBit(int bit) { return (links[bit] != nullptr); }
+
+    Node* get(int bit) { return links[bit]; }
+
+    void put(int bit, Node* node) { links[bit] = node; }
 };
 
-class Trie{
-    private:
-        Node* root;
-    public:
-        Trie(){
-            root = new Node();
-        }
-    
-        void insert(int num){
-            Node* node = root;
-            for(int bit=31; bit>=0; bit--){
-                int bitt = (num>>bit) & 1;
-                
-                bool present = node->childPresent(bitt);
-                if(!present){
-                    node->put(bitt, new Node());
-                }
-                
-                node = node->get(bitt);
+class Trie {
+private:
+    Node* root;
+
+public:
+    Trie() { root = new Node(); }
+
+    void insert(int num) {
+        int mask = 1 << 31;
+        Node* node = root;
+
+        for (int i = 31; i >= 0; i--) {
+            int bit = (num >> i) & 1; // (num & mask) ? 1 : 0;
+
+            if (!node->containsBit(bit)) {
+                node->put(bit, new Node());
             }
+
+            node = node->get(bit);
+            mask >>= 1;
         }
-    
-        int getMax(int num){
-            Node* node = root;
-            int maxi = 0;
-            
-            for(int bit=31; bit>=0; bit--){
-                int bitt = (num >> bit) & 1;
-                
-                int toGetMax = 1-bitt;
-                
-                bool present = node->childPresent(toGetMax);
-                if(present){
-                    maxi = maxi | 1<<bit;
-                    node = node->get(toGetMax);
-                }else{
-                    node = node->get(bitt);
-                }
+    }
+
+    int findMaximumXOR(int num) {
+        int mask = 1 << 31, ans = 0;
+        Node* node = root;
+
+        for (int i = 31; i >= 0; i--) {
+            int bit = (num >> i) & 1; //(num & mask) ? 1 : 0;
+
+            if (node->containsBit(!bit)) {
+                ans |= (1 << i);
+                node = node->get(!bit);
+            } else {
+                node = node->get(bit);
             }
-            return maxi;
+
+            mask >>= 1; // Shift the mask to the right
         }
+        return ans;
+    }
 };
 
 class Solution {
+private:
+    Trie trie;
+
 public:
-        vector<int> maximizeXor(vector<int>& nums, vector<vector<int>>& queries) {
-        vector< pair<int, pair<int,int>>> oq;
-        int n = queries.size();
+    static bool comp(pair<vector<int>, int>& a, pair<vector<int>, int>& b) {
+        return a.first[1] < b.first[1];
+    }
+    vector<int> maximizeXor(vector<int>& nums, vector<vector<int>>& qs) {
+        int nq = qs.size(), n = nums.size();
 
-        for(int ind = 0; ind < n; ind++){
-            auto v = queries[ind];
-            oq.push_back({v[1], {v[0], ind}});
-        }
-
-        sort(oq.begin(), oq.end());
+        vector<int> ans(nq);
         sort(nums.begin(), nums.end());
 
-        vector<int>ans(n, -1);
+        vector<pair<vector<int>, int>> qInd;
 
-        Trie* trie = new Trie();
+        // Populate qInd with pairs of query vectors and their indices
+        for (int i = 0; i < nq; i++) {
+            qInd.push_back({qs[i], i});
+        }
 
-        int ind = 0;
-        for(int i = 0; i < n; i++) {
-            int mi = oq[i].first;
-            int xi = oq[i].second.first;
-            int qi = oq[i].second.second;
+        // Sort qInd using the custom comparator
+        sort(qInd.begin(), qInd.end(), comp);
 
-            // Add numbers to the trie until the current maximum
-            while (ind < nums.size() && nums[ind] <= mi) {
-                trie->insert(nums[ind]);
-                ind++;
+        int alreadyInserted = -1;
+
+        for (auto qrp : qInd) { // qrp = qr pari -> qr, ind
+            int ind = qrp.second;
+            int x = qrp.first[0];
+            int m = qrp.first[1];
+
+            // vector<int> toXorWith;
+            // for(int i=0; i<n; i++){
+            //     if(nums[i] <= m) toXorWith.push_back(nums[i]);
+            //     else break;
+            // }
+
+            int upperInd =
+                upper_bound(nums.begin(), nums.end(), m) - nums.begin();
+
+            int maxXor = -1;
+
+            if (upperInd > 0) {
+                // trie.insert(nums);
+                for (int i = alreadyInserted + 1; i < upperInd && i < n; i++) {
+                    int ele = nums[i];
+                    trie.insert(ele);
+                }
+                
+                alreadyInserted = upperInd-1;
+
+                int xorr = trie.findMaximumXOR(x);
+                maxXor = max(maxXor, xorr);
             }
 
-            if (ind != 0) ans[qi] = trie->getMax(xi);
+            ans[ind] = maxXor;
         }
+
         return ans;
     }
 };
