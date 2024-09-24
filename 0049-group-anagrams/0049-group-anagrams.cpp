@@ -1,32 +1,21 @@
-#include<bits/stdc++.h>
-class Solution
-{
-    public:
-        vector<vector < string>> groupAnagrams(vector<string> &s)
-        {
-
-            int n = s.size();
-            map< vector<char>, vector<string> >mp;
-            vector<vector < string>> ans;
-            
-            for (string &word: s)
-            {
-                int len = word.size();
-                //make the freq vector for individual word
-                vector<char> f(26, 0);
-                for (int i = 0; i < len; i++)
-                {
-                    f[word[i]-'a']++;
-                }
-                //put this into the map
-                mp[f].push_back(word);
-
+class Solution {
+public:
+    vector<vector<string>> groupAnagrams(vector<string>& strs) {
+        vector<vector<string>> ans;
+        map< vector<int>, vector<string> > freq;
+        
+        for(auto str: strs){
+            vector<int> fre(26, 0);
+            for(auto ele: str){
+                fre[ele - 'a']++;
             }
-            for(auto &vectors : mp)
-            {
-                ans.push_back(vectors.second);
-            }
-
-            return ans;
+            freq[fre].push_back(str);
         }
+        
+        for(auto it=freq.begin(); it != freq.end(); it++){
+            ans.push_back(it->second);
+        }
+        
+        return ans;
+    }
 };
