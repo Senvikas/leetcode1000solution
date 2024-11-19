@@ -14,7 +14,7 @@ public:
             mp[curr]++;
 
             // if we've at least k elements ---> r - l + 1 = k
-            while(r - l + 1 == k)
+            if(r - l + 1 == k)
             {
                 if(mp.size() == k)
                 {
