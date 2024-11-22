@@ -24,11 +24,9 @@ public:
             {
                 mp[patt]++;
             }
-            else if(mp.find(xorPatt) != mp.end()){
+            else
+            {
                 mp[xorPatt]++;
-            }
-            else{
-                mp[patt]++;
             }
         }
 
