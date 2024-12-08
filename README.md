@@ -27,6 +27,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1370-count-number-of-nice-subarrays](https://github.com/Senvikas/leetcode1000solution/tree/master/1370-count-number-of-nice-subarrays) |
 | [1826-maximum-xor-with-an-element-from-array](https://github.com/Senvikas/leetcode1000solution/tree/master/1826-maximum-xor-with-an-element-from-array) |
 | [1886-minimum-limit-of-balls-in-a-bag](https://github.com/Senvikas/leetcode1000solution/tree/master/1886-minimum-limit-of-balls-in-a-bag) |
+| [2164-two-best-non-overlapping-events](https://github.com/Senvikas/leetcode1000solution/tree/master/2164-two-best-non-overlapping-events) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/Senvikas/leetcode1000solution/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/Senvikas/leetcode1000solution/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Senvikas/leetcode1000solution/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
@@ -71,11 +72,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0015-3sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/Senvikas/leetcode1000solution/tree/master/0049-group-anagrams) |
 | [0179-largest-number](https://github.com/Senvikas/leetcode1000solution/tree/master/0179-largest-number) |
+| [2164-two-best-non-overlapping-events](https://github.com/Senvikas/leetcode1000solution/tree/master/2164-two-best-non-overlapping-events) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/Senvikas/leetcode1000solution/tree/master/2179-most-beautiful-item-for-each-query) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Senvikas/leetcode1000solution/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
+| [2164-two-best-non-overlapping-events](https://github.com/Senvikas/leetcode1000solution/tree/master/2164-two-best-non-overlapping-events) |
 | [3556-final-array-state-after-k-multiplication-operations-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3556-final-array-state-after-k-multiplication-operations-ii) |
 ## Simulation
 |  |
@@ -90,6 +93,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0474-ones-and-zeroes](https://github.com/Senvikas/leetcode1000solution/tree/master/0474-ones-and-zeroes) |
+| [2164-two-best-non-overlapping-events](https://github.com/Senvikas/leetcode1000solution/tree/master/2164-two-best-non-overlapping-events) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -103,6 +107,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Senvikas/leetcode1000solution/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1886-minimum-limit-of-balls-in-a-bag](https://github.com/Senvikas/leetcode1000solution/tree/master/1886-minimum-limit-of-balls-in-a-bag) |
+| [2164-two-best-non-overlapping-events](https://github.com/Senvikas/leetcode1000solution/tree/master/2164-two-best-non-overlapping-events) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/Senvikas/leetcode1000solution/tree/master/2179-most-beautiful-item-for-each-query) |
 ## Queue
 |  |
