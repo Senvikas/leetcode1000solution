@@ -12,6 +12,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0179-largest-number](https://github.com/Senvikas/leetcode1000solution/tree/master/0179-largest-number) |
 | [0424-longest-repeating-character-replacement](https://github.com/Senvikas/leetcode1000solution/tree/master/0424-longest-repeating-character-replacement) |
 | [0474-ones-and-zeroes](https://github.com/Senvikas/leetcode1000solution/tree/master/0474-ones-and-zeroes) |
+| [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 ## Array
 |  |
 | ------- |
@@ -44,6 +45,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/Senvikas/leetcode1000solution/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Senvikas/leetcode1000solution/tree/master/1370-count-number-of-nice-subarrays) |
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Senvikas/leetcode1000solution/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
+| [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 ## Sliding Window
 |  |
 | ------- |
@@ -54,6 +56,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0966-binary-subarrays-with-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0966-binary-subarrays-with-sum) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Senvikas/leetcode1000solution/tree/master/1370-count-number-of-nice-subarrays) |
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/Senvikas/leetcode1000solution/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
+| [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -111,6 +114,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1886-minimum-limit-of-balls-in-a-bag](https://github.com/Senvikas/leetcode1000solution/tree/master/1886-minimum-limit-of-balls-in-a-bag) |
 | [2164-two-best-non-overlapping-events](https://github.com/Senvikas/leetcode1000solution/tree/master/2164-two-best-non-overlapping-events) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/Senvikas/leetcode1000solution/tree/master/2179-most-beautiful-item-for-each-query) |
+| [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 | [3427-special-array-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3427-special-array-ii) |
 ## Queue
 |  |
@@ -134,4 +138,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1724-customer-who-visited-but-did-not-make-any-transactions](https://github.com/Senvikas/leetcode1000solution/tree/master/1724-customer-who-visited-but-did-not-make-any-transactions) |
+## Counting
+|  |
+| ------- |
+| [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 <!---LeetCode Topics End-->
