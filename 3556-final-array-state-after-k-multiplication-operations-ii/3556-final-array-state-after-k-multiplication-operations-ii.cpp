@@ -1,93 +1,78 @@
-#define ll long long
-ll mod = 1e9 + 7;
-
 class Solution {
 public:
-    ll powExp(ll num, int power){
-        if(power == 0) return 1;
-        if(power == 1) return num;
-        
+    using p = pair<long long, int>;
+    const long long mod = 1e9 + 7;
 
-        if(power & 1) return num * (powExp(num, power-1))%mod;
-        return powExp((num%mod*num%mod)%mod, power/2)%mod;
+    // Modular exponentiation function
+    long long power(long long base, long long exp) {
+        long long result = 1;
+        while (exp > 0) {
+            if (exp % 2 == 1) result = (result * base) % mod;
+            base = (base * base) % mod;
+            exp /= 2;
+        }
+        return result;
     }
 
-    vector<int> getFinalState(vector<int>& nums, int k, int multiplier) {
+    vector<int> getFinalState(vector<int>& nums, int k, int m) {
+        if(m == 1)
+            return nums;
+        priority_queue<p, vector<p>, greater<p>> pq; // Min-heap for smallest values
         int n = nums.size();
-        ll multi = multiplier;
+        long long maxi = INT_MIN;
 
-        if(multi == 1) return nums;
-
-        // Step 1: Prepare a set with (value, index) pairs
-        set<pair<ll, int>> st;
+        // Step 1: Initialize the priority queue and find the initial maximum
         for (int i = 0; i < n; i++) {
-            st.insert({(ll)nums[i], i});
+            pq.push({nums[i], i});
+            maxi = max(maxi, (long long)nums[i]);
         }
 
-        // Step 2: Consume k until nums[min] * multi <= max(nums)
+        // Step 2: Perform multiplications until min(nums) * m > max(nums)
         while (k > 0) {
-            auto itMini = st.begin();
-            auto itMax = prev(st.end()); 
+            auto [val, ind] = pq.top();
+            pq.pop();
 
-            ll mini = itMini->first, maxi = itMax->first;
-
-            // If min * multiplier is greater than max, break
-            if (mini * multi > maxi)
+            if (val * m > maxi) {
+                // Break if min * m exceeds the current max value
+                pq.push({val, ind});
                 break;
+            }
 
-            ll value = (mini * multi)%mod ;  // % mod
-
-            int index = itMini->second;
-
-            // Remove the current minimum and insert the new modified value
-            st.erase(itMini);
-            st.insert({value, index});
-
+            val = (val % mod * m % mod) % mod; // Apply modulo after multiplication
+            pq.push({val, ind});
             k--;
         }
 
-        // cout << "after consuming first time: " << k << endl;
+        // Step 3: Handle remaining operations
+        vector<p> cyclicBase;
+        while (!pq.empty()) {
+            cyclicBase.push_back(pq.top());
+            pq.pop();
+        }
 
-        // Step 3: Prepare a vector having set values
-        vector<pair<ll, int>> setToVec(st.begin(), st.end());
+        // If k is still greater than 0, calculate the cycle and distribute remaining operations
+        if (k > 0) {
+            int remK = k % n;         // Remaining operations that don't complete a cycle
+            int cycleCount = k / n;  // Complete cycles for all elements
 
-        if (k >= n) {
-            // cout << "K: " << k << endl;
-            int timesK = k / n;
-            cout << timesK << endl;
-            for (int i = 0; i < n; i++) {
-                ll mini = setToVec[i].first;
-                int ind = setToVec[i].second;
+            // Update each element in the cyclic base
+            for (auto& [val, ind] : cyclicBase) {
+                // Apply `cycleCount` multiplications using modular exponentiation
+                val = (val % mod * power(m, cycleCount)) % mod;
+            }
 
-                ll value = (mini%mod * powExp(multi, timesK))%mod;
-
-                setToVec[i] = {value, ind};
+            // Apply the remaining `remK` multiplications
+            for (int i = 0; i < remK; i++) {
+                cyclicBase[i].first = (cyclicBase[i].first % mod * m % mod) % mod;
             }
         }
-        // for (int i = 0; i < n; i++) {
-        //     cout << setToVec[i].first << " ";
-        // }
-        // cout << endl;
-        // Handle the remaining k
-        int remK = k % n;
-        for (int i = 0; i < remK; i++) {
-            pair<ll, int> itMini = setToVec[i];
-            ll mini = itMini.first;
-            ll value = (mini * multi) % mod;
 
-            setToVec[i] = {value, itMini.second};
+        // Step 4: Reconstruct the final array from the cyclic base
+        vector<int> result(n);
+        for (auto [val, ind] : cyclicBase) {
+            result[ind] = val % mod; // Ensure final modulo
         }
 
-        // Step 4: Prepare the result vector with final values
-        vector<int> ans(n);
-        for (int i = 0; i < n; i++) {
-            ll value = setToVec[i].first;
-            int ind = setToVec[i].second;
-
-            ans[ind] =
-                (int)(value % mod); 
-        }
-
-        return ans;
+        return result;
     }
 };
