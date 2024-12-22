@@ -40,6 +40,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/Senvikas/leetcode1000solution/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [2868-continuous-subarrays](https://github.com/Senvikas/leetcode1000solution/tree/master/2868-continuous-subarrays) |
 | [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/Senvikas/leetcode1000solution/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
+| [3181-find-building-where-alice-and-bob-can-meet](https://github.com/Senvikas/leetcode1000solution/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
 | [3427-special-array-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3427-special-array-ii) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 | [3556-final-array-state-after-k-multiplication-operations-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3556-final-array-state-after-k-multiplication-operations-ii) |
@@ -106,6 +107,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2692-take-gifts-from-the-richest-pile](https://github.com/Senvikas/leetcode1000solution/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/Senvikas/leetcode1000solution/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [2868-continuous-subarrays](https://github.com/Senvikas/leetcode1000solution/tree/master/2868-continuous-subarrays) |
+| [3181-find-building-where-alice-and-bob-can-meet](https://github.com/Senvikas/leetcode1000solution/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 | [3556-final-array-state-after-k-multiplication-operations-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3556-final-array-state-after-k-multiplication-operations-ii) |
 ## Simulation
@@ -144,6 +146,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2164-two-best-non-overlapping-events](https://github.com/Senvikas/leetcode1000solution/tree/master/2164-two-best-non-overlapping-events) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/Senvikas/leetcode1000solution/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/Senvikas/leetcode1000solution/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
+| [3181-find-building-where-alice-and-bob-can-meet](https://github.com/Senvikas/leetcode1000solution/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 | [3427-special-array-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3427-special-array-ii) |
 ## Queue
@@ -184,9 +187,19 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0780-max-chunks-to-make-sorted](https://github.com/Senvikas/leetcode1000solution/tree/master/0780-max-chunks-to-make-sorted) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/Senvikas/leetcode1000solution/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
+| [3181-find-building-where-alice-and-bob-can-meet](https://github.com/Senvikas/leetcode1000solution/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
 ## Monotonic Stack
 |  |
 | ------- |
 | [0780-max-chunks-to-make-sorted](https://github.com/Senvikas/leetcode1000solution/tree/master/0780-max-chunks-to-make-sorted) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/Senvikas/leetcode1000solution/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
+| [3181-find-building-where-alice-and-bob-can-meet](https://github.com/Senvikas/leetcode1000solution/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
+## Binary Indexed Tree
+|  |
+| ------- |
+| [3181-find-building-where-alice-and-bob-can-meet](https://github.com/Senvikas/leetcode1000solution/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
+## Segment Tree
+|  |
+| ------- |
+| [3181-find-building-where-alice-and-bob-can-meet](https://github.com/Senvikas/leetcode1000solution/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
 <!---LeetCode Topics End-->
