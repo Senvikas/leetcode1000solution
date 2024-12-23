@@ -169,6 +169,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0787-sliding-puzzle](https://github.com/Senvikas/leetcode1000solution/tree/master/0787-sliding-puzzle) |
+| [2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level](https://github.com/Senvikas/leetcode1000solution/tree/master/2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level) |
 ## Database
 |  |
 | ------- |
@@ -202,4 +203,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3181-find-building-where-alice-and-bob-can-meet](https://github.com/Senvikas/leetcode1000solution/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
+## Tree
+|  |
+| ------- |
+| [2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level](https://github.com/Senvikas/leetcode1000solution/tree/master/2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level) |
+## Binary Tree
+|  |
+| ------- |
+| [2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level](https://github.com/Senvikas/leetcode1000solution/tree/master/2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level) |
 <!---LeetCode Topics End-->
