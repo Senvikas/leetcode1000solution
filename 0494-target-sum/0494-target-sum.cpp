@@ -1,49 +1,36 @@
-class Solution
-{
-    public:
-        int countPartitions(int n, int d, vector<int> &arr)  //refer to dp 18.
-        {
-            int t = 0;
-            for (auto &i: arr) t += i;
-            if (t - d < 0 || (t - d) &1) return 0;
-            int sum = (t - d) / 2;
-
-            vector<int> prev(sum + 1, 0), curr(sum + 1, 0);
-            if (arr[0] == 0) prev[0] = 2;
-            else prev[0] = 1;
-
-            if (arr[0] != 0 && arr[0] <= sum) prev[arr[0]] = 1;
-            for (int i = 1; i < n; i++)
-            {
-                for (int s = 0; s <= sum; s++)
-                {
-                    int exc = prev[s];
-                    int inc = 0;
-                    if (s >= arr[i]) inc = prev[s - arr[i]];
-
-                    curr[s] = (inc + exc) ;
-                }
-                prev = curr;
+class Solution {
+public:
+    void computeSums(const vector<int>& nums, int start, int end,  vector<long long>& sums) {
+        sums.push_back(0);
+        for (int i = start; i < end; ++i) {
+            int num = nums[i];
+            int n = sums.size();
+            for (int j = 0; j < n; ++j) {
+                sums.push_back(sums[j] + num);
+                sums[j] -= num;
             }
-            return prev[sum];
         }
-
-    int solve(vector<int> &arr, int t, int i, vector<vector< int>> &dp)
-    {
-        if (i < 0) return t == 0;
-        if (dp[i][2000 + t] != -1) return dp[i][2000 + t];
-        int sub = solve(arr, t - arr[i], i - 1, dp);
-        int add = solve(arr, t + arr[i], i - 1, dp);
-
-        return dp[i][2000 + t] = add + sub;
     }
 
-    int findTargetSumWays(vector<int> &arr, int target)
-    {
-        int n = arr.size();
-        /*      vector<vector<int>>dp(n+1, vector < int>(4001, -1));
-               return solve(arr, target, arr.size()-1, dp);          */
+    int findTargetSumWays(vector<int>& nums, int target) {
+        int n = nums.size();
+        int mid = n / 2;
+        vector<long long> sums1;
+        vector<long long> sums2;
+        computeSums(nums, 0, mid, sums1);
+        computeSums(nums, mid, n, sums2);
+        unordered_map<long long, long long> countMap;
+        for (auto sum : sums2) {
+            countMap[sum]++;
+        }
+        long long total = 0;
+        for (auto sum : sums1) {
+            long long complement = (long long)target - sum;
+            if (countMap.find(complement) != countMap.end()) {
+                total += countMap[complement];
+            }
+        }
 
-        return countPartitions(n, target, arr );
+        return total;
     }
 };
