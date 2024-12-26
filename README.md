@@ -21,6 +21,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0049-group-anagrams](https://github.com/Senvikas/leetcode1000solution/tree/master/0049-group-anagrams) |
 | [0179-largest-number](https://github.com/Senvikas/leetcode1000solution/tree/master/0179-largest-number) |
 | [0474-ones-and-zeroes](https://github.com/Senvikas/leetcode1000solution/tree/master/0474-ones-and-zeroes) |
+| [0494-target-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0494-target-sum) |
 | [0780-max-chunks-to-make-sorted](https://github.com/Senvikas/leetcode1000solution/tree/master/0780-max-chunks-to-make-sorted) |
 | [0787-sliding-puzzle](https://github.com/Senvikas/leetcode1000solution/tree/master/0787-sliding-puzzle) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Senvikas/leetcode1000solution/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
@@ -129,6 +130,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0474-ones-and-zeroes](https://github.com/Senvikas/leetcode1000solution/tree/master/0474-ones-and-zeroes) |
+| [0494-target-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0494-target-sum) |
 | [2164-two-best-non-overlapping-events](https://github.com/Senvikas/leetcode1000solution/tree/master/2164-two-best-non-overlapping-events) |
 ## Bit Manipulation
 |  |
@@ -218,4 +220,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/Senvikas/leetcode1000solution/tree/master/0515-find-largest-value-in-each-tree-row) |
+## Backtracking
+|  |
+| ------- |
+| [0494-target-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0494-target-sum) |
 <!---LeetCode Topics End-->
