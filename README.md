@@ -135,6 +135,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1917-maximum-average-pass-ratio](https://github.com/Senvikas/leetcode1000solution/tree/master/1917-maximum-average-pass-ratio) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/Senvikas/leetcode1000solution/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 | [2300-construct-string-with-repeat-limit](https://github.com/Senvikas/leetcode1000solution/tree/master/2300-construct-string-with-repeat-limit) |
+| [2509-minimize-xor](https://github.com/Senvikas/leetcode1000solution/tree/master/2509-minimize-xor) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -145,6 +146,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1826-maximum-xor-with-an-element-from-array](https://github.com/Senvikas/leetcode1000solution/tree/master/1826-maximum-xor-with-an-element-from-array) |
+| [2509-minimize-xor](https://github.com/Senvikas/leetcode1000solution/tree/master/2509-minimize-xor) |
 ## Trie
 |  |
 | ------- |
