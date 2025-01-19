@@ -13,6 +13,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0424-longest-repeating-character-replacement](https://github.com/Senvikas/leetcode1000solution/tree/master/0424-longest-repeating-character-replacement) |
 | [0474-ones-and-zeroes](https://github.com/Senvikas/leetcode1000solution/tree/master/0474-ones-and-zeroes) |
 | [1502-construct-k-palindrome-strings](https://github.com/Senvikas/leetcode1000solution/tree/master/1502-construct-k-palindrome-strings) |
+| [1537-maximum-score-after-splitting-a-string](https://github.com/Senvikas/leetcode1000solution/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/Senvikas/leetcode1000solution/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/Senvikas/leetcode1000solution/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2300-construct-string-with-repeat-limit](https://github.com/Senvikas/leetcode1000solution/tree/master/2300-construct-string-with-repeat-limit) |
@@ -87,6 +88,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Senvikas/leetcode1000solution/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0966-binary-subarrays-with-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0966-binary-subarrays-with-sum) |
+| [1537-maximum-score-after-splitting-a-string](https://github.com/Senvikas/leetcode1000solution/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [3427-special-array-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3427-special-array-ii) |
 ## Math
 |  |
