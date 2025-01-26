@@ -252,6 +252,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/Senvikas/leetcode1000solution/tree/master/0515-find-largest-value-in-each-tree-row) |
+| [2246-maximum-employees-to-be-invited-to-a-meeting](https://github.com/Senvikas/leetcode1000solution/tree/master/2246-maximum-employees-to-be-invited-to-a-meeting) |
 ## Backtracking
 |  |
 | ------- |
@@ -268,8 +269,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Senvikas/leetcode1000solution/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
+| [2246-maximum-employees-to-be-invited-to-a-meeting](https://github.com/Senvikas/leetcode1000solution/tree/master/2246-maximum-employees-to-be-invited-to-a-meeting) |
 ## Shortest Path
 |  |
 | ------- |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Senvikas/leetcode1000solution/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
+## Topological Sort
+|  |
+| ------- |
+| [2246-maximum-employees-to-be-invited-to-a-meeting](https://github.com/Senvikas/leetcode1000solution/tree/master/2246-maximum-employees-to-be-invited-to-a-meeting) |
 <!---LeetCode Topics End-->
