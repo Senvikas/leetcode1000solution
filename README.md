@@ -15,6 +15,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1502-construct-k-palindrome-strings](https://github.com/Senvikas/leetcode1000solution/tree/master/1502-construct-k-palindrome-strings) |
 | [1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/Senvikas/leetcode1000solution/tree/master/1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/Senvikas/leetcode1000solution/tree/master/1537-maximum-score-after-splitting-a-string) |
+| [2107-find-unique-binary-string](https://github.com/Senvikas/leetcode1000solution/tree/master/2107-find-unique-binary-string) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/Senvikas/leetcode1000solution/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/Senvikas/leetcode1000solution/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2300-construct-string-with-repeat-limit](https://github.com/Senvikas/leetcode1000solution/tree/master/2300-construct-string-with-repeat-limit) |
@@ -46,6 +47,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/Senvikas/leetcode1000solution/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 | [1886-minimum-limit-of-balls-in-a-bag](https://github.com/Senvikas/leetcode1000solution/tree/master/1886-minimum-limit-of-balls-in-a-bag) |
 | [1917-maximum-average-pass-ratio](https://github.com/Senvikas/leetcode1000solution/tree/master/1917-maximum-average-pass-ratio) |
+| [2107-find-unique-binary-string](https://github.com/Senvikas/leetcode1000solution/tree/master/2107-find-unique-binary-string) |
 | [2164-two-best-non-overlapping-events](https://github.com/Senvikas/leetcode1000solution/tree/master/2164-two-best-non-overlapping-events) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/Senvikas/leetcode1000solution/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/Senvikas/leetcode1000solution/tree/master/2292-counting-words-with-a-given-prefix) |
@@ -78,6 +80,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1364-tuple-with-same-product](https://github.com/Senvikas/leetcode1000solution/tree/master/1364-tuple-with-same-product) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Senvikas/leetcode1000solution/tree/master/1370-count-number-of-nice-subarrays) |
 | [1502-construct-k-palindrome-strings](https://github.com/Senvikas/leetcode1000solution/tree/master/1502-construct-k-palindrome-strings) |
+| [2107-find-unique-binary-string](https://github.com/Senvikas/leetcode1000solution/tree/master/2107-find-unique-binary-string) |
 | [2300-construct-string-with-repeat-limit](https://github.com/Senvikas/leetcode1000solution/tree/master/2300-construct-string-with-repeat-limit) |
 | [2448-count-number-of-bad-pairs](https://github.com/Senvikas/leetcode1000solution/tree/master/2448-count-number-of-bad-pairs) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/Senvikas/leetcode1000solution/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
@@ -286,6 +289,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0494-target-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0494-target-sum) |
 | [1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/Senvikas/leetcode1000solution/tree/master/1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/Senvikas/leetcode1000solution/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
+| [2107-find-unique-binary-string](https://github.com/Senvikas/leetcode1000solution/tree/master/2107-find-unique-binary-string) |
 ## String Matching
 |  |
 | ------- |
