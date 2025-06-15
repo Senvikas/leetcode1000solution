@@ -25,6 +25,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0015-3sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0015-3sum) |
+| [0040-combination-sum-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/0040-combination-sum-ii) |
 | [0049-group-anagrams](https://github.com/Senvikas/leetcode1000solution/tree/master/0049-group-anagrams) |
 | [0179-largest-number](https://github.com/Senvikas/leetcode1000solution/tree/master/0179-largest-number) |
 | [0407-trapping-rain-water-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/0407-trapping-rain-water-ii) |
@@ -300,6 +301,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Backtracking
 |  |
 | ------- |
+| [0040-combination-sum-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/0040-combination-sum-ii) |
 | [0494-target-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0494-target-sum) |
 | [1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/Senvikas/leetcode1000solution/tree/master/1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/Senvikas/leetcode1000solution/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
