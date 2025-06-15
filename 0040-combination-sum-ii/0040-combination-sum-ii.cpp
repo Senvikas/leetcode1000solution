@@ -1,25 +1,34 @@
 class Solution {
 public:
-    void solve(vector<int> &candi, vector<vector<int>> &ans, vector<int> &tmp, int t, int ind) {
-        if (t == 0) {
-            ans.push_back(tmp);
+    vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
+        sort(candidates.begin(), candidates.end());
+        vector<vector<int>> result;
+        vector<int> combination;
+        backtrack(candidates, result, combination, 0, target);
+        return result;
+    }
+
+private:
+    void backtrack(vector<int> &candidates, vector<vector<int>> &result, vector<int> combination, int index, int remTarget)
+    {
+        if(remTarget == 0)
+        {
+            result.push_back(combination);
             return;
         }
 
-        for (int i = ind; i < candi.size() && t >= candi[i]; ++i) {
-            if (i == ind || candi[i] != candi[i - 1]) { // Skip duplicates
-                tmp.push_back(candi[i]);
-                solve(candi, ans, tmp, t - candi[i], i + 1);
-                tmp.pop_back();
-            }
-        }
-    }
+        for(int ind = index; ind < candidates.size(); ind++)
+        {
+            if(ind > index && candidates[ind-1] == candidates[ind])
+                continue;
 
-    vector<vector<int>> combinationSum2(vector<int> &candi, int t) {
-        sort(candi.begin(), candi.end());
-        vector<vector<int>> ans;
-        vector<int> tmp;
-        solve(candi, ans, tmp, t, 0);
-        return ans;
+            if(remTarget < candidates[ind])
+                break;
+
+            combination.push_back(candidates[ind]);
+            backtrack(candidates, result, combination, ind+1, remTarget-candidates[ind]);
+            combination.pop_back();
+        }
+        return;
     }
 };
