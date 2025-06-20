@@ -27,6 +27,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0015-3sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0015-3sum) |
 | [0040-combination-sum-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/0040-combination-sum-ii) |
 | [0049-group-anagrams](https://github.com/Senvikas/leetcode1000solution/tree/master/0049-group-anagrams) |
+| [0088-merge-sorted-array](https://github.com/Senvikas/leetcode1000solution/tree/master/0088-merge-sorted-array) |
 | [0179-largest-number](https://github.com/Senvikas/leetcode1000solution/tree/master/0179-largest-number) |
 | [0407-trapping-rain-water-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/0407-trapping-rain-water-ii) |
 | [0474-ones-and-zeroes](https://github.com/Senvikas/leetcode1000solution/tree/master/0474-ones-and-zeroes) |
@@ -128,12 +129,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0015-3sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0015-3sum) |
+| [0088-merge-sorted-array](https://github.com/Senvikas/leetcode1000solution/tree/master/0088-merge-sorted-array) |
 | [2551-apply-operations-to-an-array](https://github.com/Senvikas/leetcode1000solution/tree/master/2551-apply-operations-to-an-array) |
 ## Sorting
 |  |
 | ------- |
 | [0015-3sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/Senvikas/leetcode1000solution/tree/master/0049-group-anagrams) |
+| [0088-merge-sorted-array](https://github.com/Senvikas/leetcode1000solution/tree/master/0088-merge-sorted-array) |
 | [0179-largest-number](https://github.com/Senvikas/leetcode1000solution/tree/master/0179-largest-number) |
 | [0780-max-chunks-to-make-sorted](https://github.com/Senvikas/leetcode1000solution/tree/master/0780-max-chunks-to-make-sorted) |
 | [2164-two-best-non-overlapping-events](https://github.com/Senvikas/leetcode1000solution/tree/master/2164-two-best-non-overlapping-events) |
