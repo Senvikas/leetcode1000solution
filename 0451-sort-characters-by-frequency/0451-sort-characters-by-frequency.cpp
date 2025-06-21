@@ -1,28 +1,32 @@
+#include <vector>
+#include <algorithm>
+
 class Solution {
 public:
     string frequencySort(string s) {
-        unordered_map<char, int> frequencyMap;
-        
-        // Count the frequency of each character
+        // Step 1: Count the frequency of each character
+        int freq[256] = {0};
         for (char c : s) {
-            frequencyMap[c]++;
+            freq[c]++;
         }
         
-        // Store the characters and their frequencies in a vector
-        vector<pair<int, char>> freqVec;
-        for (const auto& entry : frequencyMap) {
-            freqVec.push_back({entry.second, entry.first});
+        // Step 2: Store characters and their frequencies in a vector
+        vector<pair<int, char>> freqChars;
+        for (int i = 0; i < 256; i++) {
+            if (freq[i] > 0) {
+                freqChars.push_back({freq[i], (char)i});
+            }
         }
         
-        // Sort the vector by frequency in descending order
-        sort(freqVec.begin(), freqVec.end(), [](const pair<int, char>& a, const pair<int, char>& b) {
+        // Step 3: Sort the vector in descending order of frequency
+        sort(freqChars.begin(), freqChars.end(), [](const pair<int, char>& a, const pair<int, char>& b) {
             return a.first > b.first;
         });
         
-        // Build the result string
+        // Step 4: Build the result string
         string result;
-        for (const auto& entry : freqVec) {
-            result.append(entry.first, entry.second);
+        for (auto& p : freqChars) {
+            result.append(string(p.first, p.second));
         }
         
         return result;
