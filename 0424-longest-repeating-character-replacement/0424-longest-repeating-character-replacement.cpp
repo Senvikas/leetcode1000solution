@@ -2,27 +2,30 @@ class Solution {
 public:
     int characterReplacement(string s, int k) {
         int n = s.size();
-        vector<int> freq_count(26, 0);
-        int window_start = 0, window_end = 0, max_freq = 0, max_length = 0;
-
-        while(window_end < n){
-            freq_count[s[window_end] - 'A']++;
-            max_freq = max(max_freq, freq_count[s[window_end] - 'A']);
-
+        vector<int> freq(26, 0);
+        int maxFreq = 0; // Tracks the maximum frequency of any character in the current window
+        int maxLen = 0;  // Tracks the maximum length of valid window found so far
+        
+        int left = 0;
+        for (int right = 0; right < n; right++) {
+            char currentChar = s[right];
+            freq[currentChar - 'A']++;
+            maxFreq = max(maxFreq, freq[currentChar - 'A']);
             
-            // while(window_end - window_start + 1 - max_freq > k){
-            if(window_end - window_start + 1 - max_freq > k){
-                freq_count[s[window_start] - 'A']--;
-                // for(int i=0; i<26; i++) max_freq = max(max_freq, freq_count[i]);
-                window_start++;
+            // Calculate the number of replacements needed: window_size - maxFreq
+            // If replacements needed > k, shrink the window from the left
+            while ((right - left + 1 - maxFreq) > k) {
+                char leftChar = s[left];
+                freq[leftChar - 'A']--;
+                left++;
+                // Note: We don't decrement maxFreq here because it doesn't affect the result
+                // The window can only get smaller, so maxFreq might stay the same or decrease
             }
-
-            if(window_end - window_start + 1 - max_freq <= k) 
-                max_length = max(max_length, window_end - window_start + 1);
-
-            window_end++;
+            
+            // Update the maximum valid window size
+            maxLen = max(maxLen, right - left + 1);
         }
-
-        return max_length;
+        
+        return maxLen;
     }
 };
