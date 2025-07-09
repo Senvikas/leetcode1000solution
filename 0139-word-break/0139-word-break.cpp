@@ -1,34 +1,31 @@
 class Solution {
-private:
-    bool solve(string& s,vector<string>& words,int i,vector<int>& dp)
-    {
-        int n=s.size();
-        //Base case
-        if(i==n)
-            return true;
-        //Check if already calculated
-        if(dp[i]!=-1)
-            return dp[i];
-        
-        bool ans=false;
-        //Try to break for every index
-        for(int ind=0;ind<=n-i;ind++)
-        {
-            //If we find the word in the given vector then check for the next one
-            if(find(words.begin(),words.end(),s.substr(i,ind))!=words.end())
-            {
-                ans|=solve(s,words,i+ind,dp);
+public:
+    bool f(int ind, string &s, vector<string> &dict, int n, vector<int> &dp){
+        if(ind > n) return false;
+        if(ind == n) return true;
+
+        if(dp[ind] != -1) return dp[ind];
+
+        // from current ind see how many words are present in the dict and take each one of them and find ans for remaining string
+        for(auto word: dict){
+            int len = word.size();
+
+            // if this len is well within the remaining s (n - ind >= len)
+            if(len > n - ind) continue; // word is bigger then the remaining s
+
+            string strInS = s.substr(ind, len);
+            if(strInS == word){  // then only check for remaining s
+                bool rem = f(ind+len, s, dict, n, dp);
+                if(rem) return dp[ind] = true;
             }
         }
-        //Memoize
-        return dp[i]=ans;
-    }
-public:
-    bool wordBreak(string s, vector<string>& wordDict) 
-    {
-        int n=s.size();
-        vector<int> dp(n+1,-1);
-        return solve(s,wordDict,0,dp);
         
+        return dp[ind] = false;
+    }
+
+    bool wordBreak(string s, vector<string>& dict) {
+        int n = s.size();
+        vector<int> dp(n+1, -1);
+        return f(0, s, dict, n, dp);
     }
 };
