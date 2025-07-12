@@ -14,6 +14,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0424-longest-repeating-character-replacement](https://github.com/Senvikas/leetcode1000solution/tree/master/0424-longest-repeating-character-replacement) |
 | [0451-sort-characters-by-frequency](https://github.com/Senvikas/leetcode1000solution/tree/master/0451-sort-characters-by-frequency) |
 | [0474-ones-and-zeroes](https://github.com/Senvikas/leetcode1000solution/tree/master/0474-ones-and-zeroes) |
+| [1097-stream-of-characters](https://github.com/Senvikas/leetcode1000solution/tree/master/1097-stream-of-characters) |
 | [1502-construct-k-palindrome-strings](https://github.com/Senvikas/leetcode1000solution/tree/master/1502-construct-k-palindrome-strings) |
 | [1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/Senvikas/leetcode1000solution/tree/master/1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/Senvikas/leetcode1000solution/tree/master/1537-maximum-score-after-splitting-a-string) |
@@ -42,6 +43,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/Senvikas/leetcode1000solution/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0940-fruit-into-baskets](https://github.com/Senvikas/leetcode1000solution/tree/master/0940-fruit-into-baskets) |
 | [0966-binary-subarrays-with-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0966-binary-subarrays-with-sum) |
+| [1097-stream-of-characters](https://github.com/Senvikas/leetcode1000solution/tree/master/1097-stream-of-characters) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/Senvikas/leetcode1000solution/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1364-tuple-with-same-product](https://github.com/Senvikas/leetcode1000solution/tree/master/1364-tuple-with-same-product) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Senvikas/leetcode1000solution/tree/master/1370-count-number-of-nice-subarrays) |
@@ -205,6 +207,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0139-word-break](https://github.com/Senvikas/leetcode1000solution/tree/master/0139-word-break) |
+| [1097-stream-of-characters](https://github.com/Senvikas/leetcode1000solution/tree/master/1097-stream-of-characters) |
 | [1826-maximum-xor-with-an-element-from-array](https://github.com/Senvikas/leetcode1000solution/tree/master/1826-maximum-xor-with-an-element-from-array) |
 ## Binary Search
 |  |
@@ -359,4 +362,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0139-word-break](https://github.com/Senvikas/leetcode1000solution/tree/master/0139-word-break) |
+## Design
+|  |
+| ------- |
+| [1097-stream-of-characters](https://github.com/Senvikas/leetcode1000solution/tree/master/1097-stream-of-characters) |
+## Data Stream
+|  |
+| ------- |
+| [1097-stream-of-characters](https://github.com/Senvikas/leetcode1000solution/tree/master/1097-stream-of-characters) |
 <!---LeetCode Topics End-->
