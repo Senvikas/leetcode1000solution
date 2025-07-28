@@ -58,6 +58,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/Senvikas/leetcode1000solution/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 | [1886-minimum-limit-of-balls-in-a-bag](https://github.com/Senvikas/leetcode1000solution/tree/master/1886-minimum-limit-of-balls-in-a-bag) |
 | [1917-maximum-average-pass-ratio](https://github.com/Senvikas/leetcode1000solution/tree/master/1917-maximum-average-pass-ratio) |
+| [2022-maximum-alternating-subsequence-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/2022-maximum-alternating-subsequence-sum) |
 | [2107-find-unique-binary-string](https://github.com/Senvikas/leetcode1000solution/tree/master/2107-find-unique-binary-string) |
 | [2164-two-best-non-overlapping-events](https://github.com/Senvikas/leetcode1000solution/tree/master/2164-two-best-non-overlapping-events) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/Senvikas/leetcode1000solution/tree/master/2179-most-beautiful-item-for-each-query) |
@@ -202,6 +203,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0494-target-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0494-target-sum) |
 | [0804-rotated-digits](https://github.com/Senvikas/leetcode1000solution/tree/master/0804-rotated-digits) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
+| [2022-maximum-alternating-subsequence-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/2022-maximum-alternating-subsequence-sum) |
 | [2164-two-best-non-overlapping-events](https://github.com/Senvikas/leetcode1000solution/tree/master/2164-two-best-non-overlapping-events) |
 ## Bit Manipulation
 |  |
