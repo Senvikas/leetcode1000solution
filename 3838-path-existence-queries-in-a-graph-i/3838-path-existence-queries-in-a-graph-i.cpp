@@ -1,38 +1,25 @@
 class Solution {
 public:
-    vector<bool> pathExistenceQueries(int n, vector<int>& nums, int maxDiff,
-                                      vector<vector<int>>& qn) {
-        vector<bool> ans;
+    vector<bool> pathExistenceQueries(int n, vector<int>& nums, int maxDiff, vector<vector<int>>& qn) {
+        vector<int> parent(n, 0);
+        int group = 0;
 
-        vector<int> parent(n), rnk(n, 0);
-        iota(parent.begin(), parent.end(), 0);
+        for(int i=1; i<n; i++)
+        {
+            int diff = nums[i] - nums[i-1];
+            if(diff > maxDiff)
+                group++;
 
-        function<int(int)> findPar = [&](int u){
-            return parent[u]==u ? u : parent[u]=findPar(parent[u]);
-        };
-
-        function<void(int,int)> attach = [&](int u, int v){
-            u = findPar(u); v = findPar(v);
-            if (u == v) return;
-            if (rnk[u] < rnk[v]) swap(u, v);
-            parent[v] = u;
-            if (rnk[u] == rnk[v]) ++rnk[u];
-        };
-
-        // Build components once: sort by value and union consecutive if gap <= maxDiff
-        vector<int> ord(n);
-        iota(ord.begin(), ord.end(), 0);
-        sort(ord.begin(), ord.end(), [&](int a, int b){ return nums[a] < nums[b]; });
-        for (int i = 1; i < n; ++i) {
-            if (nums[ord[i]] - nums[ord[i-1]] <= maxDiff) {
-                attach(ord[i], ord[i-1]);
-            }
+            parent[i] = group;
         }
 
-        // Answer queries
-        for (auto &q : qn) {
-            int u = q[0], v = q[1];
-            ans.push_back(findPar(u) == findPar(v));
+        vector<bool> ans;
+        for(auto q: qn)
+        {
+            if(parent[q[0]] == parent[q[1]])
+                ans.push_back(true);
+            else
+                ans.push_back(false);
         }
         return ans;
     }
