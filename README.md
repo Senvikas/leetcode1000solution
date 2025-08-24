@@ -82,6 +82,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/Senvikas/leetcode1000solution/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 | [3556-final-array-state-after-k-multiplication-operations-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3556-final-array-state-after-k-multiplication-operations-ii) |
+| [3838-path-existence-queries-in-a-graph-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3838-path-existence-queries-in-a-graph-i) |
 ## Hash Table
 |  |
 | ------- |
@@ -107,6 +108,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/Senvikas/leetcode1000solution/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/Senvikas/leetcode1000solution/tree/master/3455-minimum-length-of-string-after-operations) |
+| [3838-path-existence-queries-in-a-graph-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3838-path-existence-queries-in-a-graph-i) |
 ## Sliding Window
 |  |
 | ------- |
@@ -231,6 +233,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3181-find-building-where-alice-and-bob-can-meet](https://github.com/Senvikas/leetcode1000solution/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 | [3427-special-array-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3427-special-array-ii) |
+| [3838-path-existence-queries-in-a-graph-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3838-path-existence-queries-in-a-graph-i) |
 ## Queue
 |  |
 | ------- |
@@ -346,6 +349,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Senvikas/leetcode1000solution/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [2246-maximum-employees-to-be-invited-to-a-meeting](https://github.com/Senvikas/leetcode1000solution/tree/master/2246-maximum-employees-to-be-invited-to-a-meeting) |
 | [2583-divide-nodes-into-the-maximum-number-of-groups](https://github.com/Senvikas/leetcode1000solution/tree/master/2583-divide-nodes-into-the-maximum-number-of-groups) |
+| [3838-path-existence-queries-in-a-graph-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3838-path-existence-queries-in-a-graph-i) |
 ## Shortest Path
 |  |
 | ------- |
@@ -360,6 +364,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0854-making-a-large-island](https://github.com/Senvikas/leetcode1000solution/tree/master/0854-making-a-large-island) |
 | [2583-divide-nodes-into-the-maximum-number-of-groups](https://github.com/Senvikas/leetcode1000solution/tree/master/2583-divide-nodes-into-the-maximum-number-of-groups) |
 | [2764-maximum-number-of-fish-in-a-grid](https://github.com/Senvikas/leetcode1000solution/tree/master/2764-maximum-number-of-fish-in-a-grid) |
+| [3838-path-existence-queries-in-a-graph-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3838-path-existence-queries-in-a-graph-i) |
 ## Divide and Conquer
 |  |
 | ------- |
