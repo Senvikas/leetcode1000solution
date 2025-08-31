@@ -30,6 +30,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0015-3sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0015-3sum) |
 | [0036-valid-sudoku](https://github.com/Senvikas/leetcode1000solution/tree/master/0036-valid-sudoku) |
+| [0037-sudoku-solver](https://github.com/Senvikas/leetcode1000solution/tree/master/0037-sudoku-solver) |
 | [0040-combination-sum-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/0040-combination-sum-ii) |
 | [0049-group-anagrams](https://github.com/Senvikas/leetcode1000solution/tree/master/0049-group-anagrams) |
 | [0088-merge-sorted-array](https://github.com/Senvikas/leetcode1000solution/tree/master/0088-merge-sorted-array) |
@@ -88,6 +89,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/Senvikas/leetcode1000solution/tree/master/0036-valid-sudoku) |
+| [0037-sudoku-solver](https://github.com/Senvikas/leetcode1000solution/tree/master/0037-sudoku-solver) |
 | [0049-group-anagrams](https://github.com/Senvikas/leetcode1000solution/tree/master/0049-group-anagrams) |
 | [0076-minimum-window-substring](https://github.com/Senvikas/leetcode1000solution/tree/master/0076-minimum-window-substring) |
 | [0139-word-break](https://github.com/Senvikas/leetcode1000solution/tree/master/0139-word-break) |
@@ -250,6 +252,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/Senvikas/leetcode1000solution/tree/master/0036-valid-sudoku) |
+| [0037-sudoku-solver](https://github.com/Senvikas/leetcode1000solution/tree/master/0037-sudoku-solver) |
 | [0407-trapping-rain-water-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/0407-trapping-rain-water-ii) |
 | [0787-sliding-puzzle](https://github.com/Senvikas/leetcode1000solution/tree/master/0787-sliding-puzzle) |
 | [0854-making-a-large-island](https://github.com/Senvikas/leetcode1000solution/tree/master/0854-making-a-large-island) |
@@ -333,6 +336,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Backtracking
 |  |
 | ------- |
+| [0037-sudoku-solver](https://github.com/Senvikas/leetcode1000solution/tree/master/0037-sudoku-solver) |
 | [0040-combination-sum-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/0040-combination-sum-ii) |
 | [0494-target-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0494-target-sum) |
 | [1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/Senvikas/leetcode1000solution/tree/master/1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
