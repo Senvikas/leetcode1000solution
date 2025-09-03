@@ -79,6 +79,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2868-continuous-subarrays](https://github.com/Senvikas/leetcode1000solution/tree/master/2868-continuous-subarrays) |
 | [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/Senvikas/leetcode1000solution/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
 | [3181-find-building-where-alice-and-bob-can-meet](https://github.com/Senvikas/leetcode1000solution/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
+| [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 | [3427-special-array-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3427-special-array-ii) |
 | [3429-special-array-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3429-special-array-i) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/Senvikas/leetcode1000solution/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
@@ -141,6 +142,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1370-count-number-of-nice-subarrays](https://github.com/Senvikas/leetcode1000solution/tree/master/1370-count-number-of-nice-subarrays) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
 | [2448-count-number-of-bad-pairs](https://github.com/Senvikas/leetcode1000solution/tree/master/2448-count-number-of-bad-pairs) |
+| [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 ## Two Pointers
 |  |
@@ -163,6 +165,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/Senvikas/leetcode1000solution/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/Senvikas/leetcode1000solution/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/Senvikas/leetcode1000solution/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
+| [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -392,4 +395,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1097-stream-of-characters](https://github.com/Senvikas/leetcode1000solution/tree/master/1097-stream-of-characters) |
+## Geometry
+|  |
+| ------- |
+| [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
+## Enumeration
+|  |
+| ------- |
+| [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 <!---LeetCode Topics End-->
