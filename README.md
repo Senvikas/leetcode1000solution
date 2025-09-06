@@ -85,6 +85,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/Senvikas/leetcode1000solution/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 | [3556-final-array-state-after-k-multiplication-operations-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3556-final-array-state-after-k-multiplication-operations-ii) |
+| [3744-minimum-operations-to-make-array-elements-zero](https://github.com/Senvikas/leetcode1000solution/tree/master/3744-minimum-operations-to-make-array-elements-zero) |
 | [3838-path-existence-queries-in-a-graph-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3838-path-existence-queries-in-a-graph-i) |
 ## Hash Table
 |  |
@@ -144,6 +145,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2448-count-number-of-bad-pairs](https://github.com/Senvikas/leetcode1000solution/tree/master/2448-count-number-of-bad-pairs) |
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
+| [3744-minimum-operations-to-make-array-elements-zero](https://github.com/Senvikas/leetcode1000solution/tree/master/3744-minimum-operations-to-make-array-elements-zero) |
 | [3830-find-closest-person](https://github.com/Senvikas/leetcode1000solution/tree/master/3830-find-closest-person) |
 ## Two Pointers
 |  |
@@ -221,6 +223,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1826-maximum-xor-with-an-element-from-array](https://github.com/Senvikas/leetcode1000solution/tree/master/1826-maximum-xor-with-an-element-from-array) |
 | [2509-minimize-xor](https://github.com/Senvikas/leetcode1000solution/tree/master/2509-minimize-xor) |
 | [2533-bitwise-xor-of-all-pairings](https://github.com/Senvikas/leetcode1000solution/tree/master/2533-bitwise-xor-of-all-pairings) |
+| [3744-minimum-operations-to-make-array-elements-zero](https://github.com/Senvikas/leetcode1000solution/tree/master/3744-minimum-operations-to-make-array-elements-zero) |
 ## Trie
 |  |
 | ------- |
