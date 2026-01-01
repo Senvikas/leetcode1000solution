@@ -33,6 +33,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0037-sudoku-solver](https://github.com/Senvikas/leetcode1000solution/tree/master/0037-sudoku-solver) |
 | [0040-combination-sum-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/0040-combination-sum-ii) |
 | [0049-group-anagrams](https://github.com/Senvikas/leetcode1000solution/tree/master/0049-group-anagrams) |
+| [0066-plus-one](https://github.com/Senvikas/leetcode1000solution/tree/master/0066-plus-one) |
 | [0088-merge-sorted-array](https://github.com/Senvikas/leetcode1000solution/tree/master/0088-merge-sorted-array) |
 | [0139-word-break](https://github.com/Senvikas/leetcode1000solution/tree/master/0139-word-break) |
 | [0179-largest-number](https://github.com/Senvikas/leetcode1000solution/tree/master/0179-largest-number) |
@@ -139,6 +140,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Math
 |  |
 | ------- |
+| [0066-plus-one](https://github.com/Senvikas/leetcode1000solution/tree/master/0066-plus-one) |
 | [0804-rotated-digits](https://github.com/Senvikas/leetcode1000solution/tree/master/0804-rotated-digits) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Senvikas/leetcode1000solution/tree/master/1370-count-number-of-nice-subarrays) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
