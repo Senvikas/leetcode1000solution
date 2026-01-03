@@ -216,6 +216,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0474-ones-and-zeroes](https://github.com/Senvikas/leetcode1000solution/tree/master/0474-ones-and-zeroes) |
 | [0494-target-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0494-target-sum) |
 | [0804-rotated-digits](https://github.com/Senvikas/leetcode1000solution/tree/master/0804-rotated-digits) |
+| [1411-number-of-ways-to-paint-n-3-grid](https://github.com/Senvikas/leetcode1000solution/tree/master/1411-number-of-ways-to-paint-n-3-grid) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
 | [2022-maximum-alternating-subsequence-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/2022-maximum-alternating-subsequence-sum) |
 | [2164-two-best-non-overlapping-events](https://github.com/Senvikas/leetcode1000solution/tree/master/2164-two-best-non-overlapping-events) |
