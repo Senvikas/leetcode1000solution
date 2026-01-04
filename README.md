@@ -51,6 +51,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/Senvikas/leetcode1000solution/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1364-tuple-with-same-product](https://github.com/Senvikas/leetcode1000solution/tree/master/1364-tuple-with-same-product) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Senvikas/leetcode1000solution/tree/master/1370-count-number-of-nice-subarrays) |
+| [1390-four-divisors](https://github.com/Senvikas/leetcode1000solution/tree/master/1390-four-divisors) |
 | [1397-search-suggestions-system](https://github.com/Senvikas/leetcode1000solution/tree/master/1397-search-suggestions-system) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Senvikas/leetcode1000solution/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/Senvikas/leetcode1000solution/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
@@ -143,6 +144,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0066-plus-one](https://github.com/Senvikas/leetcode1000solution/tree/master/0066-plus-one) |
 | [0804-rotated-digits](https://github.com/Senvikas/leetcode1000solution/tree/master/0804-rotated-digits) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Senvikas/leetcode1000solution/tree/master/1370-count-number-of-nice-subarrays) |
+| [1390-four-divisors](https://github.com/Senvikas/leetcode1000solution/tree/master/1390-four-divisors) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
 | [2448-count-number-of-bad-pairs](https://github.com/Senvikas/leetcode1000solution/tree/master/2448-count-number-of-bad-pairs) |
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
