@@ -312,6 +312,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Stack
 |  |
 | ------- |
+| [0173-binary-search-tree-iterator](https://github.com/Senvikas/leetcode1000solution/tree/master/0173-binary-search-tree-iterator) |
 | [0780-max-chunks-to-make-sorted](https://github.com/Senvikas/leetcode1000solution/tree/master/0780-max-chunks-to-make-sorted) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/Senvikas/leetcode1000solution/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [2221-check-if-a-parentheses-string-can-be-valid](https://github.com/Senvikas/leetcode1000solution/tree/master/2221-check-if-a-parentheses-string-can-be-valid) |
@@ -333,6 +334,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Tree
 |  |
 | ------- |
+| [0173-binary-search-tree-iterator](https://github.com/Senvikas/leetcode1000solution/tree/master/0173-binary-search-tree-iterator) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/Senvikas/leetcode1000solution/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/Senvikas/leetcode1000solution/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Senvikas/leetcode1000solution/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
@@ -340,6 +342,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Tree
 |  |
 | ------- |
+| [0173-binary-search-tree-iterator](https://github.com/Senvikas/leetcode1000solution/tree/master/0173-binary-search-tree-iterator) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/Senvikas/leetcode1000solution/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/Senvikas/leetcode1000solution/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Senvikas/leetcode1000solution/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
@@ -406,6 +409,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Design
 |  |
 | ------- |
+| [0173-binary-search-tree-iterator](https://github.com/Senvikas/leetcode1000solution/tree/master/0173-binary-search-tree-iterator) |
 | [1097-stream-of-characters](https://github.com/Senvikas/leetcode1000solution/tree/master/1097-stream-of-characters) |
 ## Data Stream
 |  |
@@ -419,4 +423,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0173-binary-search-tree-iterator](https://github.com/Senvikas/leetcode1000solution/tree/master/0173-binary-search-tree-iterator) |
+## Iterator
+|  |
+| ------- |
+| [0173-binary-search-tree-iterator](https://github.com/Senvikas/leetcode1000solution/tree/master/0173-binary-search-tree-iterator) |
 <!---LeetCode Topics End-->
