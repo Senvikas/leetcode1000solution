@@ -1,39 +1,47 @@
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
 class Solution {
 public:
-    
-    int bfs(TreeNode* root){
-        int ans=1;
+    int maxLevelSum(TreeNode* root) {
         if(!root)
             return 0;
         queue<TreeNode*> q;
         q.push(root);
-        q.push(NULL);
-        int sum=-10e5;//sum at curr level
-        int presum=root->val;  //sum at previous level
-        int level=1;  //current level
-        while(!q.empty()){
-            TreeNode* t=q.front();
-            q.pop();
-            if(t==NULL){
-                if(sum>presum){
-                    presum=sum;
-                    ans=level;
-                }
-                sum=0;
-                level++;
-                if(q.size()>0)
-                    q.push(NULL);
+
+        int sum = -(1e9+7), level = -1, thisLevel = 0;
+        while(!q.empty())
+        {
+            int sz = q.size();
+            int levelSum = 0;
+            thisLevel++;
+
+            for(int i=0; i<sz; i++)
+            {
+                auto node = q.front();
+                q.pop();
+
+                levelSum += node->val;
+                if(node->left)
+                    q.push(node->left);
+                if(node->right)
+                    q.push(node->right);
             }
-            else{
-                if(t->left)     q.push(t->left);
-                if(t->right)    q.push(t->right);
-                sum+=t->val;
+            if(levelSum > sum)
+            {
+                level = thisLevel;
+                sum = levelSum;
             }
         }
-        return ans;
-    }
 
-    int maxLevelSum(TreeNode* root) {
-        return bfs(root);
+        return level;
     }
 };
