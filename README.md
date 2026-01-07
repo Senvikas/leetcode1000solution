@@ -64,6 +64,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1917-maximum-average-pass-ratio](https://github.com/Senvikas/leetcode1000solution/tree/master/1917-maximum-average-pass-ratio) |
 | [1975-maximum-matrix-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/1975-maximum-matrix-sum) |
 | [2022-maximum-alternating-subsequence-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/2022-maximum-alternating-subsequence-sum) |
+| [2049-count-nodes-with-the-highest-score](https://github.com/Senvikas/leetcode1000solution/tree/master/2049-count-nodes-with-the-highest-score) |
 | [2107-find-unique-binary-string](https://github.com/Senvikas/leetcode1000solution/tree/master/2107-find-unique-binary-string) |
 | [2164-two-best-non-overlapping-events](https://github.com/Senvikas/leetcode1000solution/tree/master/2164-two-best-non-overlapping-events) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/Senvikas/leetcode1000solution/tree/master/2179-most-beautiful-item-for-each-query) |
@@ -339,6 +340,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/Senvikas/leetcode1000solution/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Senvikas/leetcode1000solution/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/Senvikas/leetcode1000solution/tree/master/1339-maximum-product-of-splitted-binary-tree) |
+| [2049-count-nodes-with-the-highest-score](https://github.com/Senvikas/leetcode1000solution/tree/master/2049-count-nodes-with-the-highest-score) |
 | [2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level](https://github.com/Senvikas/leetcode1000solution/tree/master/2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level) |
 ## Binary Tree
 |  |
@@ -348,6 +350,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/Senvikas/leetcode1000solution/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Senvikas/leetcode1000solution/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/Senvikas/leetcode1000solution/tree/master/1339-maximum-product-of-splitted-binary-tree) |
+| [2049-count-nodes-with-the-highest-score](https://github.com/Senvikas/leetcode1000solution/tree/master/2049-count-nodes-with-the-highest-score) |
 | [2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level](https://github.com/Senvikas/leetcode1000solution/tree/master/2558-minimum-number-of-operations-to-sort-a-binary-tree-by-level) |
 ## Depth-First Search
 |  |
@@ -356,6 +359,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0854-making-a-large-island](https://github.com/Senvikas/leetcode1000solution/tree/master/0854-making-a-large-island) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Senvikas/leetcode1000solution/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/Senvikas/leetcode1000solution/tree/master/1339-maximum-product-of-splitted-binary-tree) |
+| [2049-count-nodes-with-the-highest-score](https://github.com/Senvikas/leetcode1000solution/tree/master/2049-count-nodes-with-the-highest-score) |
 | [2246-maximum-employees-to-be-invited-to-a-meeting](https://github.com/Senvikas/leetcode1000solution/tree/master/2246-maximum-employees-to-be-invited-to-a-meeting) |
 | [2764-maximum-number-of-fish-in-a-grid](https://github.com/Senvikas/leetcode1000solution/tree/master/2764-maximum-number-of-fish-in-a-grid) |
 ## Backtracking
