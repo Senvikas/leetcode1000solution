@@ -101,6 +101,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0139-word-break](https://github.com/Senvikas/leetcode1000solution/tree/master/0139-word-break) |
 | [0424-longest-repeating-character-replacement](https://github.com/Senvikas/leetcode1000solution/tree/master/0424-longest-repeating-character-replacement) |
 | [0451-sort-characters-by-frequency](https://github.com/Senvikas/leetcode1000solution/tree/master/0451-sort-characters-by-frequency) |
+| [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/Senvikas/leetcode1000solution/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/Senvikas/leetcode1000solution/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0940-fruit-into-baskets](https://github.com/Senvikas/leetcode1000solution/tree/master/0940-fruit-into-baskets) |
 | [0966-binary-subarrays-with-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0966-binary-subarrays-with-sum) |
@@ -285,6 +286,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0515-find-largest-value-in-each-tree-row](https://github.com/Senvikas/leetcode1000solution/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0787-sliding-puzzle](https://github.com/Senvikas/leetcode1000solution/tree/master/0787-sliding-puzzle) |
 | [0854-making-a-large-island](https://github.com/Senvikas/leetcode1000solution/tree/master/0854-making-a-large-island) |
+| [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/Senvikas/leetcode1000solution/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Senvikas/leetcode1000solution/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Senvikas/leetcode1000solution/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1876-map-of-highest-peak](https://github.com/Senvikas/leetcode1000solution/tree/master/1876-map-of-highest-peak) |
@@ -337,6 +339,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0173-binary-search-tree-iterator](https://github.com/Senvikas/leetcode1000solution/tree/master/0173-binary-search-tree-iterator) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/Senvikas/leetcode1000solution/tree/master/0515-find-largest-value-in-each-tree-row) |
+| [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/Senvikas/leetcode1000solution/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/Senvikas/leetcode1000solution/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Senvikas/leetcode1000solution/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/Senvikas/leetcode1000solution/tree/master/1339-maximum-product-of-splitted-binary-tree) |
@@ -347,6 +350,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0173-binary-search-tree-iterator](https://github.com/Senvikas/leetcode1000solution/tree/master/0173-binary-search-tree-iterator) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/Senvikas/leetcode1000solution/tree/master/0515-find-largest-value-in-each-tree-row) |
+| [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/Senvikas/leetcode1000solution/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/Senvikas/leetcode1000solution/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Senvikas/leetcode1000solution/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/Senvikas/leetcode1000solution/tree/master/1339-maximum-product-of-splitted-binary-tree) |
@@ -357,6 +361,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/Senvikas/leetcode1000solution/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0854-making-a-large-island](https://github.com/Senvikas/leetcode1000solution/tree/master/0854-making-a-large-island) |
+| [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/Senvikas/leetcode1000solution/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Senvikas/leetcode1000solution/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/Senvikas/leetcode1000solution/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 | [2049-count-nodes-with-the-highest-score](https://github.com/Senvikas/leetcode1000solution/tree/master/2049-count-nodes-with-the-highest-score) |
