@@ -50,6 +50,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0966-binary-subarrays-with-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0966-binary-subarrays-with-sum) |
 | [1097-stream-of-characters](https://github.com/Senvikas/leetcode1000solution/tree/master/1097-stream-of-characters) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/Senvikas/leetcode1000solution/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
+| [1266-minimum-time-visiting-all-points](https://github.com/Senvikas/leetcode1000solution/tree/master/1266-minimum-time-visiting-all-points) |
 | [1364-tuple-with-same-product](https://github.com/Senvikas/leetcode1000solution/tree/master/1364-tuple-with-same-product) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Senvikas/leetcode1000solution/tree/master/1370-count-number-of-nice-subarrays) |
 | [1390-four-divisors](https://github.com/Senvikas/leetcode1000solution/tree/master/1390-four-divisors) |
@@ -147,6 +148,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0066-plus-one](https://github.com/Senvikas/leetcode1000solution/tree/master/0066-plus-one) |
 | [0804-rotated-digits](https://github.com/Senvikas/leetcode1000solution/tree/master/0804-rotated-digits) |
+| [1266-minimum-time-visiting-all-points](https://github.com/Senvikas/leetcode1000solution/tree/master/1266-minimum-time-visiting-all-points) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Senvikas/leetcode1000solution/tree/master/1370-count-number-of-nice-subarrays) |
 | [1390-four-divisors](https://github.com/Senvikas/leetcode1000solution/tree/master/1390-four-divisors) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
@@ -435,6 +437,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Geometry
 |  |
 | ------- |
+| [1266-minimum-time-visiting-all-points](https://github.com/Senvikas/leetcode1000solution/tree/master/1266-minimum-time-visiting-all-points) |
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 ## Enumeration
 |  |
