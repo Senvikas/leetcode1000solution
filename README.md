@@ -89,6 +89,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3427-special-array-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3427-special-array-ii) |
 | [3429-special-array-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3429-special-array-i) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/Senvikas/leetcode1000solution/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
+| [3454-separate-squares-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3454-separate-squares-ii) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 | [3556-final-array-state-after-k-multiplication-operations-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3556-final-array-state-after-k-multiplication-operations-ii) |
 | [3744-minimum-operations-to-make-array-elements-zero](https://github.com/Senvikas/leetcode1000solution/tree/master/3744-minimum-operations-to-make-array-elements-zero) |
@@ -257,6 +258,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3181-find-building-where-alice-and-bob-can-meet](https://github.com/Senvikas/leetcode1000solution/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
 | [3427-special-array-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3427-special-array-ii) |
+| [3454-separate-squares-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3454-separate-squares-ii) |
 | [3838-path-existence-queries-in-a-graph-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3838-path-existence-queries-in-a-graph-i) |
 ## Queue
 |  |
@@ -341,6 +343,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3181-find-building-where-alice-and-bob-can-meet](https://github.com/Senvikas/leetcode1000solution/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
+| [3454-separate-squares-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3454-separate-squares-ii) |
 ## Tree
 |  |
 | ------- |
@@ -451,4 +454,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0173-binary-search-tree-iterator](https://github.com/Senvikas/leetcode1000solution/tree/master/0173-binary-search-tree-iterator) |
+## Line Sweep
+|  |
+| ------- |
+| [3454-separate-squares-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3454-separate-squares-ii) |
 <!---LeetCode Topics End-->
