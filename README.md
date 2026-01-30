@@ -458,4 +458,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3454-separate-squares-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3454-separate-squares-ii) |
+## Linked List
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/Senvikas/leetcode1000solution/tree/master/0206-reverse-linked-list) |
+## Recursion
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/Senvikas/leetcode1000solution/tree/master/0206-reverse-linked-list) |
 <!---LeetCode Topics End-->
