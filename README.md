@@ -87,6 +87,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/Senvikas/leetcode1000solution/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
 | [3181-find-building-where-alice-and-bob-can-meet](https://github.com/Senvikas/leetcode1000solution/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
+| [3380-maximum-area-rectangle-with-point-constraints-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3380-maximum-area-rectangle-with-point-constraints-i) |
 | [3427-special-array-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3427-special-array-ii) |
 | [3429-special-array-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3429-special-array-i) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/Senvikas/leetcode1000solution/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
@@ -156,6 +157,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
 | [2448-count-number-of-bad-pairs](https://github.com/Senvikas/leetcode1000solution/tree/master/2448-count-number-of-bad-pairs) |
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
+| [3380-maximum-area-rectangle-with-point-constraints-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3380-maximum-area-rectangle-with-point-constraints-i) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 | [3744-minimum-operations-to-make-array-elements-zero](https://github.com/Senvikas/leetcode1000solution/tree/master/3744-minimum-operations-to-make-array-elements-zero) |
 | [3830-find-closest-person](https://github.com/Senvikas/leetcode1000solution/tree/master/3830-find-closest-person) |
@@ -182,6 +184,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/Senvikas/leetcode1000solution/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/Senvikas/leetcode1000solution/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
+| [3380-maximum-area-rectangle-with-point-constraints-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3380-maximum-area-rectangle-with-point-constraints-i) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -341,10 +344,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3181-find-building-where-alice-and-bob-can-meet](https://github.com/Senvikas/leetcode1000solution/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
+| [3380-maximum-area-rectangle-with-point-constraints-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3380-maximum-area-rectangle-with-point-constraints-i) |
 ## Segment Tree
 |  |
 | ------- |
 | [3181-find-building-where-alice-and-bob-can-meet](https://github.com/Senvikas/leetcode1000solution/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
+| [3380-maximum-area-rectangle-with-point-constraints-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3380-maximum-area-rectangle-with-point-constraints-i) |
 | [3454-separate-squares-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3454-separate-squares-ii) |
 ## Tree
 |  |
@@ -444,10 +449,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [1266-minimum-time-visiting-all-points](https://github.com/Senvikas/leetcode1000solution/tree/master/1266-minimum-time-visiting-all-points) |
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
+| [3380-maximum-area-rectangle-with-point-constraints-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3380-maximum-area-rectangle-with-point-constraints-i) |
 ## Enumeration
 |  |
 | ------- |
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
+| [3380-maximum-area-rectangle-with-point-constraints-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3380-maximum-area-rectangle-with-point-constraints-i) |
 | [3734-lexicographically-smallest-palindromic-permutation-greater-than-target](https://github.com/Senvikas/leetcode1000solution/tree/master/3734-lexicographically-smallest-palindromic-permutation-greater-than-target) |
 ## Binary Search Tree
 |  |
