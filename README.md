@@ -94,6 +94,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3454-separate-squares-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3454-separate-squares-ii) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 | [3556-final-array-state-after-k-multiplication-operations-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3556-final-array-state-after-k-multiplication-operations-ii) |
+| [3634-minimum-removals-to-balance-array](https://github.com/Senvikas/leetcode1000solution/tree/master/3634-minimum-removals-to-balance-array) |
 | [3744-minimum-operations-to-make-array-elements-zero](https://github.com/Senvikas/leetcode1000solution/tree/master/3744-minimum-operations-to-make-array-elements-zero) |
 | [3838-path-existence-queries-in-a-graph-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3838-path-existence-queries-in-a-graph-i) |
 ## Hash Table
@@ -138,6 +139,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2868-continuous-subarrays](https://github.com/Senvikas/leetcode1000solution/tree/master/2868-continuous-subarrays) |
 | [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/Senvikas/leetcode1000solution/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
+| [3634-minimum-removals-to-balance-array](https://github.com/Senvikas/leetcode1000solution/tree/master/3634-minimum-removals-to-balance-array) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -185,6 +187,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/Senvikas/leetcode1000solution/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 | [3380-maximum-area-rectangle-with-point-constraints-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3380-maximum-area-rectangle-with-point-constraints-i) |
+| [3634-minimum-removals-to-balance-array](https://github.com/Senvikas/leetcode1000solution/tree/master/3634-minimum-removals-to-balance-array) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
