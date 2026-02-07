@@ -1,26 +1,56 @@
 class Solution {
 public:
-    string convert(string s, int numRows) {
-        if(numRows<2) return s;
-       int t[numRows][s.size()];
-       memset(t,-1, sizeof(t));
-        string ans;
-
-        for(int i=0, changer=1, row=0; i<s.size(); i++){
-            
-            t[row][i]= s[i];
-            if(row==numRows-1) changer =-1;
-            if(row==0) changer=1;
-            row= row+ changer;
-
+    string convert(string s, int nr) {
+        int sz = s.size();
+        vector<vector<char>> mat(nr, vector<char>(1001, ' '));
+        int j = 0, ind = 0;
+        while(ind < sz)
+        {
+            int r = nr, i = 0;
+            // cout << i << " " << j << endl;
+            // col first
+            while(r-- && ind < sz)
+            {
+                mat[i][j] = s[ind];
+                ind++; i++;
+            }
+            // fill the diag in upside manner
+            i--;
+            while(i>1 && ind < sz)
+            {
+                i--; j++;
+                // cout << s[ind] << endl;
+                mat[i][j] = s[ind];
+                ind++;
+            }
+            j++;
         }
 
-       for(int i=0; i<numRows; i++){
-           for(int j=0; j<s.size();j++){
-               if(t[i][j]!=-1)ans.push_back(t[i][j]);
-           }
-       }
+        string ans = "";
+        int cnt = 0;
 
-    return ans;
+        // for(int i=0; i<nr; i++)
+        // {
+        //     for(int j=0; j<5*nr; j++)
+        //     {
+        //             cout << mat[i][j] <<  " ";
+        //     } cout << endl;
+        // }cout << endl;
+
+        for(int i=0; i<nr; i++)
+        {
+            for(int j=0; j<mat[0].size(); j++)
+            {
+                if(mat[i][j] != ' ')
+                {
+                    cnt++;
+                    ans.push_back(mat[i][j]);
+                    if(cnt == sz)
+                        return ans;
+                }
+            }
+        }
+
+        return ans; // never happen.
     }
 };
