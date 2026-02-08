@@ -358,6 +358,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Tree
 |  |
 | ------- |
+| [0110-balanced-binary-tree](https://github.com/Senvikas/leetcode1000solution/tree/master/0110-balanced-binary-tree) |
 | [0173-binary-search-tree-iterator](https://github.com/Senvikas/leetcode1000solution/tree/master/0173-binary-search-tree-iterator) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/Senvikas/leetcode1000solution/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/Senvikas/leetcode1000solution/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
@@ -369,6 +370,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Tree
 |  |
 | ------- |
+| [0110-balanced-binary-tree](https://github.com/Senvikas/leetcode1000solution/tree/master/0110-balanced-binary-tree) |
 | [0173-binary-search-tree-iterator](https://github.com/Senvikas/leetcode1000solution/tree/master/0173-binary-search-tree-iterator) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/Senvikas/leetcode1000solution/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/Senvikas/leetcode1000solution/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
@@ -380,6 +382,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Depth-First Search
 |  |
 | ------- |
+| [0110-balanced-binary-tree](https://github.com/Senvikas/leetcode1000solution/tree/master/0110-balanced-binary-tree) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/Senvikas/leetcode1000solution/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0854-making-a-large-island](https://github.com/Senvikas/leetcode1000solution/tree/master/0854-making-a-large-island) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/Senvikas/leetcode1000solution/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
