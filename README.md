@@ -9,6 +9,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0006-zigzag-conversion](https://github.com/Senvikas/leetcode1000solution/tree/master/0006-zigzag-conversion) |
 | [0008-string-to-integer-atoi](https://github.com/Senvikas/leetcode1000solution/tree/master/0008-string-to-integer-atoi) |
 | [0049-group-anagrams](https://github.com/Senvikas/leetcode1000solution/tree/master/0049-group-anagrams) |
+| [0071-simplify-path](https://github.com/Senvikas/leetcode1000solution/tree/master/0071-simplify-path) |
 | [0076-minimum-window-substring](https://github.com/Senvikas/leetcode1000solution/tree/master/0076-minimum-window-substring) |
 | [0139-word-break](https://github.com/Senvikas/leetcode1000solution/tree/master/0139-word-break) |
 | [0179-largest-number](https://github.com/Senvikas/leetcode1000solution/tree/master/0179-largest-number) |
@@ -331,6 +332,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Stack
 |  |
 | ------- |
+| [0071-simplify-path](https://github.com/Senvikas/leetcode1000solution/tree/master/0071-simplify-path) |
 | [0085-maximal-rectangle](https://github.com/Senvikas/leetcode1000solution/tree/master/0085-maximal-rectangle) |
 | [0173-binary-search-tree-iterator](https://github.com/Senvikas/leetcode1000solution/tree/master/0173-binary-search-tree-iterator) |
 | [0780-max-chunks-to-make-sorted](https://github.com/Senvikas/leetcode1000solution/tree/master/0780-max-chunks-to-make-sorted) |
