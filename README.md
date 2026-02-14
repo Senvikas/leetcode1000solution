@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0006-zigzag-conversion](https://github.com/Senvikas/leetcode1000solution/tree/master/0006-zigzag-conversion) |
 | [0008-string-to-integer-atoi](https://github.com/Senvikas/leetcode1000solution/tree/master/0008-string-to-integer-atoi) |
+| [0044-wildcard-matching](https://github.com/Senvikas/leetcode1000solution/tree/master/0044-wildcard-matching) |
 | [0049-group-anagrams](https://github.com/Senvikas/leetcode1000solution/tree/master/0049-group-anagrams) |
 | [0071-simplify-path](https://github.com/Senvikas/leetcode1000solution/tree/master/0071-simplify-path) |
 | [0076-minimum-window-substring](https://github.com/Senvikas/leetcode1000solution/tree/master/0076-minimum-window-substring) |
@@ -221,6 +222,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Greedy
 |  |
 | ------- |
+| [0044-wildcard-matching](https://github.com/Senvikas/leetcode1000solution/tree/master/0044-wildcard-matching) |
 | [0179-largest-number](https://github.com/Senvikas/leetcode1000solution/tree/master/0179-largest-number) |
 | [0780-max-chunks-to-make-sorted](https://github.com/Senvikas/leetcode1000solution/tree/master/0780-max-chunks-to-make-sorted) |
 | [1502-construct-k-palindrome-strings](https://github.com/Senvikas/leetcode1000solution/tree/master/1502-construct-k-palindrome-strings) |
@@ -232,6 +234,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 |  |
 | ------- |
+| [0044-wildcard-matching](https://github.com/Senvikas/leetcode1000solution/tree/master/0044-wildcard-matching) |
 | [0085-maximal-rectangle](https://github.com/Senvikas/leetcode1000solution/tree/master/0085-maximal-rectangle) |
 | [0139-word-break](https://github.com/Senvikas/leetcode1000solution/tree/master/0139-word-break) |
 | [0474-ones-and-zeroes](https://github.com/Senvikas/leetcode1000solution/tree/master/0474-ones-and-zeroes) |
@@ -484,5 +487,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Recursion
 |  |
 | ------- |
+| [0044-wildcard-matching](https://github.com/Senvikas/leetcode1000solution/tree/master/0044-wildcard-matching) |
 | [0206-reverse-linked-list](https://github.com/Senvikas/leetcode1000solution/tree/master/0206-reverse-linked-list) |
 <!---LeetCode Topics End-->
