@@ -1,45 +1,65 @@
-class Solution {
+#include <iostream>
+#include <bits/stdc++.h>
+
+using namespace std;
+
+class Solution{
 public:
-    bool f(int i, int j, string &s, string &p, vector<vector<int>> &dp){
-        //base case
-        //1. if s ended, remaining pattern have to be "*******"
-        if(i==0){     //shifting of indexes
-            while(j>=1){
-                if(p[j-1] != '*') return false;
-                j--;
-            }
-            return true;
-        }
-        
-        //2. pattern ended, ex  s="ab", p="b"  => s="a", p="" could not match ret false
-        if(j==0) return false;
-        
-        if(dp[i][j] != -1) return dp[i][j];
-        
-        //1. if matches
-        if(s[i-1] == p[j-1]){
-            return dp[i][j] = f(i-1, j-1, s, p, dp);
-        }
-        
-        //2. if does not match but pattern is having '?', they still would match
-        if(p[j-1] == '?'){
-            return dp[i][j] = f(i-1, j-1, s, p, dp);
-        }
-        
-        //3. if does not match but pattern is having '*', * could become a matching char or an empty seq, consider both options.
-        if(p[j-1] == '*'){
-            bool matchingChar = f(i-1, j, s, p, dp);
-            bool emptySequence = f(i, j-1, s, p, dp);
-            
-            return dp[i][j] = matchingChar || emptySequence;
-        }
-        
-        //4. neither matched nor had '?' nor '*', means case is like s="a", p="b"
-        return dp[i][j] = false;
-    }
-    bool isMatch(string s, string p) {
-        int m = s.size(), n = p.size();
-        vector<vector<int>> dp(m+1, vector<int>(n+1, -1));
-        return f(m, n, s, p, dp);
-    }
+	vector<vector<int>> dp;
+	bool solve(int i, int j, string &s, string &p)
+	{
+		if(i == s.size())
+		{
+			// remaining all the chars should be *
+			while(j < p.size())
+			{
+				if(p[j++] != '*')
+					return false;
+			}
+			return true;
+		}
+		
+		if(j == p.size())
+			return false;
+		
+		if(dp[i][j] != -1)
+			return dp[i][j];
+		
+		// match
+		if(s[i] == p[j] || p[j] == '?')
+			return dp[i][j] = solve(i+1, j+1, s, p);
+		
+		if(p[j] == '*')
+		{
+			return dp[i][j] = solve(i+1, j, s, p) | solve(i+1, j+1, s, p) | solve(i, j+1, s, p);
+		}
+		
+		return dp[i][j] = false;
+	}
+
+	bool isMatch(string &s, string &p)
+	{
+		dp.resize(s.size(), vector<int>(p.size(), -1));
+		return solve(0, 0, s, p);
+	}
 };
+
+
+// int main()
+// {
+// 	// cout << "Hello world!!!" << endl;
+// 	string s = "paaab";
+// 	string p = "?*ab";
+	
+// 	Solution soln;
+// 	bool ans = soln.isMatch(s, p);
+// 	cout << ans << endl;
+// 	bool expected = true;
+// 	if(ans == expected)
+// 	{
+// 		cout << "Pass" << endl;
+// 	}else{
+// 		cout << "Fail" << endl;
+// 	}
+// 	return 0;
+// }
