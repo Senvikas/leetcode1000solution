@@ -247,6 +247,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Bit Manipulation
 |  |
 | ------- |
+| [0401-binary-watch](https://github.com/Senvikas/leetcode1000solution/tree/master/0401-binary-watch) |
 | [1826-maximum-xor-with-an-element-from-array](https://github.com/Senvikas/leetcode1000solution/tree/master/1826-maximum-xor-with-an-element-from-array) |
 | [2509-minimize-xor](https://github.com/Senvikas/leetcode1000solution/tree/master/2509-minimize-xor) |
 | [2533-bitwise-xor-of-all-pairings](https://github.com/Senvikas/leetcode1000solution/tree/master/2533-bitwise-xor-of-all-pairings) |
@@ -401,6 +402,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0037-sudoku-solver](https://github.com/Senvikas/leetcode1000solution/tree/master/0037-sudoku-solver) |
 | [0040-combination-sum-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/0040-combination-sum-ii) |
+| [0401-binary-watch](https://github.com/Senvikas/leetcode1000solution/tree/master/0401-binary-watch) |
 | [0494-target-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0494-target-sum) |
 | [1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/Senvikas/leetcode1000solution/tree/master/1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/Senvikas/leetcode1000solution/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
