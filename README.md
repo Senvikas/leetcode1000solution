@@ -17,6 +17,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0424-longest-repeating-character-replacement](https://github.com/Senvikas/leetcode1000solution/tree/master/0424-longest-repeating-character-replacement) |
 | [0451-sort-characters-by-frequency](https://github.com/Senvikas/leetcode1000solution/tree/master/0451-sort-characters-by-frequency) |
 | [0474-ones-and-zeroes](https://github.com/Senvikas/leetcode1000solution/tree/master/0474-ones-and-zeroes) |
+| [0761-special-binary-string](https://github.com/Senvikas/leetcode1000solution/tree/master/0761-special-binary-string) |
 | [1097-stream-of-characters](https://github.com/Senvikas/leetcode1000solution/tree/master/1097-stream-of-characters) |
 | [1397-search-suggestions-system](https://github.com/Senvikas/leetcode1000solution/tree/master/1397-search-suggestions-system) |
 | [1502-construct-k-palindrome-strings](https://github.com/Senvikas/leetcode1000solution/tree/master/1502-construct-k-palindrome-strings) |
@@ -182,6 +183,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0088-merge-sorted-array](https://github.com/Senvikas/leetcode1000solution/tree/master/0088-merge-sorted-array) |
 | [0179-largest-number](https://github.com/Senvikas/leetcode1000solution/tree/master/0179-largest-number) |
 | [0451-sort-characters-by-frequency](https://github.com/Senvikas/leetcode1000solution/tree/master/0451-sort-characters-by-frequency) |
+| [0761-special-binary-string](https://github.com/Senvikas/leetcode1000solution/tree/master/0761-special-binary-string) |
 | [0780-max-chunks-to-make-sorted](https://github.com/Senvikas/leetcode1000solution/tree/master/0780-max-chunks-to-make-sorted) |
 | [1397-search-suggestions-system](https://github.com/Senvikas/leetcode1000solution/tree/master/1397-search-suggestions-system) |
 | [2164-two-best-non-overlapping-events](https://github.com/Senvikas/leetcode1000solution/tree/master/2164-two-best-non-overlapping-events) |
@@ -442,6 +444,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Divide and Conquer
 |  |
 | ------- |
+| [0761-special-binary-string](https://github.com/Senvikas/leetcode1000solution/tree/master/0761-special-binary-string) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/Senvikas/leetcode1000solution/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 ## Bucket Sort
 |  |
