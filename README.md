@@ -164,6 +164,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1266-minimum-time-visiting-all-points](https://github.com/Senvikas/leetcode1000solution/tree/master/1266-minimum-time-visiting-all-points) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Senvikas/leetcode1000solution/tree/master/1370-count-number-of-nice-subarrays) |
 | [1390-four-divisors](https://github.com/Senvikas/leetcode1000solution/tree/master/1390-four-divisors) |
+| [1622-fancy-sequence](https://github.com/Senvikas/leetcode1000solution/tree/master/1622-fancy-sequence) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/Senvikas/leetcode1000solution/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
 | [2448-count-number-of-bad-pairs](https://github.com/Senvikas/leetcode1000solution/tree/master/2448-count-number-of-bad-pairs) |
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
@@ -366,6 +367,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Segment Tree
 |  |
 | ------- |
+| [1622-fancy-sequence](https://github.com/Senvikas/leetcode1000solution/tree/master/1622-fancy-sequence) |
 | [3181-find-building-where-alice-and-bob-can-meet](https://github.com/Senvikas/leetcode1000solution/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
 | [3380-maximum-area-rectangle-with-point-constraints-i](https://github.com/Senvikas/leetcode1000solution/tree/master/3380-maximum-area-rectangle-with-point-constraints-i) |
 | [3454-separate-squares-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/3454-separate-squares-ii) |
@@ -464,6 +466,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0173-binary-search-tree-iterator](https://github.com/Senvikas/leetcode1000solution/tree/master/0173-binary-search-tree-iterator) |
 | [1097-stream-of-characters](https://github.com/Senvikas/leetcode1000solution/tree/master/1097-stream-of-characters) |
+| [1622-fancy-sequence](https://github.com/Senvikas/leetcode1000solution/tree/master/1622-fancy-sequence) |
 ## Data Stream
 |  |
 | ------- |
