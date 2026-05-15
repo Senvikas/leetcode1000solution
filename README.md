@@ -45,6 +45,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0088-merge-sorted-array](https://github.com/Senvikas/leetcode1000solution/tree/master/0088-merge-sorted-array) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Senvikas/leetcode1000solution/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0139-word-break](https://github.com/Senvikas/leetcode1000solution/tree/master/0139-word-break) |
+| [0153-find-minimum-in-rotated-sorted-array](https://github.com/Senvikas/leetcode1000solution/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0179-largest-number](https://github.com/Senvikas/leetcode1000solution/tree/master/0179-largest-number) |
 | [0407-trapping-rain-water-ii](https://github.com/Senvikas/leetcode1000solution/tree/master/0407-trapping-rain-water-ii) |
 | [0474-ones-and-zeroes](https://github.com/Senvikas/leetcode1000solution/tree/master/0474-ones-and-zeroes) |
@@ -277,6 +278,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Search
 |  |
 | ------- |
+| [0153-find-minimum-in-rotated-sorted-array](https://github.com/Senvikas/leetcode1000solution/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/Senvikas/leetcode1000solution/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1397-search-suggestions-system](https://github.com/Senvikas/leetcode1000solution/tree/master/1397-search-suggestions-system) |
 | [1886-minimum-limit-of-balls-in-a-bag](https://github.com/Senvikas/leetcode1000solution/tree/master/1886-minimum-limit-of-balls-in-a-bag) |
