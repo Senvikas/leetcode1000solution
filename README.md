@@ -182,6 +182,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0015-3sum](https://github.com/Senvikas/leetcode1000solution/tree/master/0015-3sum) |
 | [0088-merge-sorted-array](https://github.com/Senvikas/leetcode1000solution/tree/master/0088-merge-sorted-array) |
+| [2095-delete-the-middle-node-of-a-linked-list](https://github.com/Senvikas/leetcode1000solution/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
 | [2551-apply-operations-to-an-array](https://github.com/Senvikas/leetcode1000solution/tree/master/2551-apply-operations-to-an-array) |
 | [3734-lexicographically-smallest-palindromic-permutation-greater-than-target](https://github.com/Senvikas/leetcode1000solution/tree/master/3734-lexicographically-smallest-palindromic-permutation-greater-than-target) |
 ## Sorting
@@ -508,6 +509,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0206-reverse-linked-list](https://github.com/Senvikas/leetcode1000solution/tree/master/0206-reverse-linked-list) |
+| [2095-delete-the-middle-node-of-a-linked-list](https://github.com/Senvikas/leetcode1000solution/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
 ## Recursion
 |  |
 | ------- |
