@@ -63,6 +63,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1266-minimum-time-visiting-all-points](https://github.com/Senvikas/leetcode1000solution/tree/master/1266-minimum-time-visiting-all-points) |
 | [1364-tuple-with-same-product](https://github.com/Senvikas/leetcode1000solution/tree/master/1364-tuple-with-same-product) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Senvikas/leetcode1000solution/tree/master/1370-count-number-of-nice-subarrays) |
+| [1386-cinema-seat-allocation](https://github.com/Senvikas/leetcode1000solution/tree/master/1386-cinema-seat-allocation) |
 | [1390-four-divisors](https://github.com/Senvikas/leetcode1000solution/tree/master/1390-four-divisors) |
 | [1397-search-suggestions-system](https://github.com/Senvikas/leetcode1000solution/tree/master/1397-search-suggestions-system) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/Senvikas/leetcode1000solution/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
@@ -126,6 +127,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/Senvikas/leetcode1000solution/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1364-tuple-with-same-product](https://github.com/Senvikas/leetcode1000solution/tree/master/1364-tuple-with-same-product) |
 | [1370-count-number-of-nice-subarrays](https://github.com/Senvikas/leetcode1000solution/tree/master/1370-count-number-of-nice-subarrays) |
+| [1386-cinema-seat-allocation](https://github.com/Senvikas/leetcode1000solution/tree/master/1386-cinema-seat-allocation) |
 | [1502-construct-k-palindrome-strings](https://github.com/Senvikas/leetcode1000solution/tree/master/1502-construct-k-palindrome-strings) |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/Senvikas/leetcode1000solution/tree/master/1674-minimum-moves-to-make-array-complementary) |
 | [2107-find-unique-binary-string](https://github.com/Senvikas/leetcode1000solution/tree/master/2107-find-unique-binary-string) |
@@ -244,6 +246,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0044-wildcard-matching](https://github.com/Senvikas/leetcode1000solution/tree/master/0044-wildcard-matching) |
 | [0179-largest-number](https://github.com/Senvikas/leetcode1000solution/tree/master/0179-largest-number) |
 | [0780-max-chunks-to-make-sorted](https://github.com/Senvikas/leetcode1000solution/tree/master/0780-max-chunks-to-make-sorted) |
+| [1386-cinema-seat-allocation](https://github.com/Senvikas/leetcode1000solution/tree/master/1386-cinema-seat-allocation) |
 | [1502-construct-k-palindrome-strings](https://github.com/Senvikas/leetcode1000solution/tree/master/1502-construct-k-palindrome-strings) |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/Senvikas/leetcode1000solution/tree/master/1727-largest-submatrix-with-rearrangements) |
 | [1917-maximum-average-pass-ratio](https://github.com/Senvikas/leetcode1000solution/tree/master/1917-maximum-average-pass-ratio) |
@@ -270,6 +273,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0401-binary-watch](https://github.com/Senvikas/leetcode1000solution/tree/master/0401-binary-watch) |
+| [1386-cinema-seat-allocation](https://github.com/Senvikas/leetcode1000solution/tree/master/1386-cinema-seat-allocation) |
 | [1826-maximum-xor-with-an-element-from-array](https://github.com/Senvikas/leetcode1000solution/tree/master/1826-maximum-xor-with-an-element-from-array) |
 | [2509-minimize-xor](https://github.com/Senvikas/leetcode1000solution/tree/master/2509-minimize-xor) |
 | [2533-bitwise-xor-of-all-pairings](https://github.com/Senvikas/leetcode1000solution/tree/master/2533-bitwise-xor-of-all-pairings) |
